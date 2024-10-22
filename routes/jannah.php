@@ -13,4 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/jannah', function () { return view('welcome');});
+Route::get('/home', function () { return view('jannah.index');});
+
+Route::get('/inkop', function () { return view('jannah.inkop');});
