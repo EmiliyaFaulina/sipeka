@@ -5,29 +5,29 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Tables / General - NiceAdmin Bootstrap Template</title>
+  <title>Charts / ApexCharts - NiceAdmin Bootstrap Template</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{{ asset('')}}assets4/img/favicon.png" rel="icon">
+  <link href="{{ asset('')}}assets4/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
-  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+  <link href="{{ asset('')}}assets4/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{ asset('')}}assets4/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="{{ asset('')}}assets4/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="{{ asset('')}}assets4/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="{{ asset('')}}assets4/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="{{ asset('')}}assets4/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="{{ asset('')}}assets4/vendor/simple-datatables/style.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="{{ asset('')}}assets4/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: NiceAdmin
@@ -44,8 +44,8 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="">
+      <a href="index.blade.php" class="logo d-flex align-items-center">
+        <img src="{{ asset('')}}assets4/img/logo.png" alt="">
         <span class="d-none d-lg-block">NiceAdmin</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
@@ -160,7 +160,7 @@
 
             <li class="message-item">
               <a href="#">
-                <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
+                <img src="{{ asset('')}}assets4/img/messages-1.jpg" alt="" class="rounded-circle">
                 <div>
                   <h4>Maria Hudson</h4>
                   <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
@@ -174,7 +174,7 @@
 
             <li class="message-item">
               <a href="#">
-                <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
+                <img src="{{ asset('')}}assets4/img/messages-2.jpg" alt="" class="rounded-circle">
                 <div>
                   <h4>Anna Nelson</h4>
                   <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
@@ -188,7 +188,7 @@
 
             <li class="message-item">
               <a href="#">
-                <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
+                <img src="{{ asset('')}}assets4/img/messages-3.jpg" alt="" class="rounded-circle">
                 <div>
                   <h4>David Muldon</h4>
                   <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
@@ -211,7 +211,7 @@
         <li class="nav-item dropdown pe-3">
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <img src="{{ asset('')}}assets4/img/profile-img.jpg" alt="Profile" class="rounded-circle">
             <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
           </a><!-- End Profile Iamge Icon -->
 
@@ -224,42 +224,6 @@
               <hr class="dropdown-divider">
             </li>
 
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
-                <i class="bi bi-person"></i>
-                <span>My Profile</span>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
-                <i class="bi bi-gear"></i>
-                <span>Account Settings</span>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
-                <i class="bi bi-question-circle"></i>
-                <span>Need Help?</span>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="#">
-                <i class="bi bi-box-arrow-right"></i>
-                <span>Sign Out</span>
-              </a>
-            </li>
 
           </ul><!-- End Profile Dropdown Items -->
         </li><!-- End Profile Nav -->
@@ -275,7 +239,7 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="index.html">
+        <a class="nav-link collapsed" href="index.blade.php">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
@@ -287,33 +251,34 @@
         </a>
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="components-pengajuan.html">
+            <a href="components-pengajuan.blade.php">
               <i class="bi bi-circle"></i><span>Pengajuan</span>
             </a>
           </li>
         </li>
-            <a href="components-pengaduan.html">
+            <a href="components-pengaduan.blade.php">
               <i class="bi bi-circle"></i><span>Pengaduan</span>
             </a>
           </li>
-          
+          <li>
+           
         </ul>
       </li><!-- End Components Nav -->
 
      
 
       <li class="nav-item">
-        <a class="nav-link " data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-layout-text-window-reverse"></i><span>Agenda</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-        <ul id="tables-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
+        <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="tables-project.html">
+            <a href="tables-project.blade.php">
               <i class="bi bi-circle"></i><span>Project</span>
             </a>
           </li>
           </li>
-            <a href="tables-progres.html">
+            <a href="tables-progres.blade.php">
               <i class="bi bi-circle"></i><span>Progres</span>
             </a>
           </li>
@@ -321,17 +286,17 @@
       </li><!-- End Tables Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+        <a class="nav-link " data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-bar-chart"></i><span>Laporan</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-        <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <ul id="charts-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
           <li>
-            <a href="charts-diterima.html">
+            <a href="charts-diterima.blade.php">
               <i class="bi bi-circle"></i><span>Diterima</span>
             </a>
           </li>
           <li>
-            <a href="charts-ditolak.html">
+            <a href="charts-ditolak.blade.php" class="active">
               <i class="bi bi-circle"></i><span>Ditolak</span>
             </a>
           </li>
@@ -340,150 +305,132 @@
       </li><!-- End Charts Nav -->
 
      
-
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#settings-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-gear"></i><span>Pengaturan</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="settings-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
           <li>
-            <a href="users-profile.html">
+            <a href="users-profile.blade.php">
               <i class="bi bi-person" style="font-size: 1rem;"></i><span>Profile</span>
             </a>
           </li>
           <li>
-            <a href="pages-logout.html">
+            <a href="pages-logout.blade.php">
               <i class="bi bi-box-arrow-right" style="font-size: 1rem;"></i><span>Log Out</span>
             </a>
           </li>
         </ul>
       </li>
       <!-- End Charts Nav -->
+      
 
-     
     </ul>
 
   </aside><!-- End Sidebar-->
 
   <main id="main" class="main">
+
     <div class="pagetitle">
-      <h1>Progres Proyek</h1>
+      <h1>Ditolak</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item">Proyek</li>
-          <li class="breadcrumb-item active">Progres</li>
+          <li class="breadcrumb-item"><a href="index.blade.php">Home</a></li>
+          <li class="breadcrumb-item">Laporan</li>
+          <li class="breadcrumb-item active">Ditolak</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
-  
-    <section class="section">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="card" style="border-radius: 15px; padding: 20px; position: relative;">
-            <div class="card-body">
-              <div class="d-flex justify-content-between">
-                <div>
-                  <h5 class="card-title"><strong>NAMA PROJECT:</strong> Sistem Pelayanan Kominfo</h5>
-                </div>
-                <div>
-                  <button class="btn" style="border: none; background: none;">
-                    <i class="bi bi-x-lg"></i>
-                  </button>
-                </div>
-              </div>
-  
-              <!-- Identitas Pemilik Progres -->
-              <div class="d-flex align-items-center mb-4">
-                <img src="path/to/tina.jpg" alt="Tina" class="img-fluid rounded-circle" style="width: 70px; height: 70px; margin-right: 15px;" />
-                <div>
-                  <p><strong>Nama:</strong> Tina</p>
-                  <p><strong>Jabatan:</strong> Project Manager</p>
-                </div>
-              </div>
-  
-              <!-- Tahap Perencanaan -->
-              <div class="row">
-                <div class="col-lg-6">
-                  <h6>A. Tahap Perencanaan</h6>
-                  <ul class="list-unstyled">
-                    <li><input type="checkbox" id="identifikasiKebutuhan"> <label for="identifikasiKebutuhan">Identifikasi Kebutuhan</label></li>
-                    <li><input type="checkbox" id="analisisPengguna"> <label for="analisisPengguna">Analisis Pengguna</label></li>
-                    <li><input type="checkbox" id="penentuanTeknologi"> <label for="penentuanTeknologi">Penentuan Teknologi</label></li>
-                    <li><input type="checkbox" id="membuatWireframe"> <label for="membuatWireframe">Membuat Wireframe</label></li>
-                  </ul>
-                </div>
-  
-                <!-- Tahap Desain -->
-                <div class="col-lg-6">
-                  <h6>B. Tahap Desain</h6>
-                  <ul class="list-unstyled">
-                    <li><input type="checkbox" id="desainAntarmuka"> <label for="desainAntarmuka">Desain Antarmuka Pengguna</label></li>
-                    <li><input type="checkbox" id="desainPengalaman"> <label for="desainPengalaman">Desain Pengalaman Pengguna</label></li>
-                    <li><input type="checkbox" id="revisiValidasi"> <label for="revisiValidasi">Revisi dan Validasi Desain</label></li>
-                    <li><input type="checkbox" id="tahapLain"> <label for="tahapLain">...</label></li>
-                  </ul>
-                </div>
-              </div>
-  
-              <!-- Update Progres -->
-              <h6>Update Progres</h6>
-              <p>Deskripsi update progres proyek ini akan ditempatkan di sini.</p>
-  
-              <!-- Ikon Navigasi (Back dan Menu) -->
-              <div style="position: absolute; bottom: 15px; right: 15px;">
-                <button class="btn" style="border: none; background: none;">
-                  <i class="bi bi-arrow-left-circle"></i>
-                </button>
-                <button class="btn" style="border: none; background: none;">
-                  <i class="bi bi-three-dots-vertical"></i>
-                </button>
-              </div>
-  
-              <!-- Tombol Tersembunyi -->
-              <div class="d-flex justify-content-between mt-4" id="actionButtons" style="display: none;">
-                <button class="btn btn-primary">Update</button>
-                <button class="btn btn-primary">Bagikan</button>
-                <button class="btn btn-secondary">Unduh</button>
-              </div>
-            </div>
-          </div>
-        </div>
+     <!-- Form untuk filter laporan -->
+     <form class="row g-3">
+      <div class="col-md-4">
+        <label for="tahun" class="form-label">Tahun</label>
+        <input type="number" class="form-control" id="tahun" placeholder="Masukkan tahun">
       </div>
-    </section>
-  </main><!-- End #main -->
-  
-  <script>
-    // Script untuk toggle tombol
-    const menuButton = document.getElementById('menuButton');
-    const actionButtons = document.getElementById('actionButtons');
-    const menuLabel = document.getElementById('menuLabel');
-  
-    menuButton.addEventListener('click', () => {
-      if (actionButtons.style.display === 'none') {
-        actionButtons.style.display = 'flex';
-        menuLabel.style.display = 'inline';
-      } else {
-        actionButtons.style.display = 'none';
-        menuLabel.style.display = 'none';
-      }
-    });
-  </script>
+      <div class="col-md-4">
+        <label for="bulan" class="form-label">Bulan</label>
+        <select id="bulan" class="form-select">
+          <option selected>Pilih bulan</option>
+          <option value="1">Januari</option>
+          <option value="2">Februari</option>
+          <option value="3">Maret</option>
+          <option value="4">April</option>
+          <option value="5">Mei</option>
+          <option value="6">Juni</option>
+          <option value="7">Juli</option>
+          <option value="8">Agustus</option>
+          <option value="9">September</option>
+          <option value="10">Oktober</option>
+          <option value="11">November</option>
+          <option value="12">Desember</option>
+        </select>
+      </div>
+      <div class="col-md-4 d-flex align-items-end">
+        <button type="submit" class="btn btn-primary">Cari</button>
+      </div>
+    </form>
 
+    <!-- Tombol untuk Cetak dan Unduh -->
+    <div class="d-flex justify-content-end mt-3">
+      <button class="btn btn-success me-2">Cetak</button>
+      <button class="btn btn-info">Unduh</button>
+    </div>
+
+    <!-- Tabel Laporan -->
+    <table class="table mt-4">
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>No.Kode</th>
+          <th>Nama Project</th>
+          <th>Type</th>
+          <th>Tenggat Waktu</th>
+          <th>Pengaju</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>P001</td>
+          <td>Project A</td>
+          <td>Type A</td>
+          <td>2024-12-31</td>
+          <td>John Doe</td>
+          <td>Ditolak</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>P002</td>
+          <td>Project B</td>
+          <td>Type B</td>
+          <td>2024-11-15</td>
+          <td>Jane Smith</td>
+          <td>Ditolak</td>
+        </tr>
+        <!-- Tambahkan data lain sesuai kebutuhan -->
+      </tbody>
+    </table>
+
+
+    
+  </main><!-- End #main -->
+
+  
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/chart.js/chart.umd.js"></script>
-  <script src="assets/vendor/echarts/echarts.min.js"></script>
-  <script src="assets/vendor/quill/quill.js"></script>
-  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
-  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="{{ asset('')}}assets4/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="{{ asset('')}}assets4/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="{{ asset('')}}assets4/vendor/chart.js/chart.umd.js"></script>
+  <script src="{{ asset('')}}assets4/vendor/echarts/echarts.min.js"></script>
+  <script src="{{ asset('')}}assets4/vendor/quill/quill.js"></script>
+  <script src="{{ asset('')}}assets4/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="{{ asset('')}}assets4/vendor/tinymce/tinymce.min.js"></script>
+  <script src="{{ asset('')}}assets4/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="{{ asset('')}}assets4/js/main.js"></script>
 
 </body>
 

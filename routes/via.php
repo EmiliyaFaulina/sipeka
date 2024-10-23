@@ -14,3 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/via', function () {  return view('welcome');});
+
+Route::get('/sk', function () { return view('via.index');});
+Route::get('/Profil', function () { return view('via.users-profile');});
+
+
