@@ -369,7 +369,7 @@
     </form>
 
     <!-- Tombol untuk Cetak dan Unduh -->
-    <div class="d-flex justify-content-end mt-3">
+    <div class="d-flex justify-content-end mt-3"> 
       <button class="btn btn-success me-2">Cetak</button>
       <button class="btn btn-info">Unduh</button>
     </div>
