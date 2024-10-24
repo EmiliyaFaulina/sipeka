@@ -14,3 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/emiliya', function () {return view('welcome');});
+
+Route::get('/emiliya', function () { return view('emiliya.index');});
+
+Route::get('/project', function () { return view('emiliya.tables-project');});
+
+Route::get('/pengajuan', function () { return view('emiliya.pengajuan');});
+
+Route::get('/diterima', function () { return view('emiliya.charts-diterima');});

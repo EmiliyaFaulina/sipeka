@@ -44,7 +44,7 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="{{url('lai')}}" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
         <span class="d-none d-lg-block">SIPEKA</span>
       </a>
@@ -177,7 +177,7 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="index.html">
+        <a class="nav-link " href="{{url('lai')}}">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
@@ -189,7 +189,7 @@
         </a>
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
             <li>
-                <a href="{{url('profil')}}">
+                <a href="">
                     <i class="bi bi-circle"></i><span>Pengajuan</span>
                 </a>
             </li>
@@ -227,7 +227,7 @@
         <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
             
-            <a href="charts-diterima.html">
+            <a href="{{url ('diterima')}}">
               <i class="bi bi-circle"></i><span>Diterima</span>
             </a>
           </li>
@@ -245,7 +245,7 @@
       <li class="nav-heading">Pages</li>
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="users-profile.html">
+        <a class="nav-link collapsed" href="{{url('lai/profil')}}">
           <i class="bi bi-person"></i>
           <span>Profile</span>
         </a>

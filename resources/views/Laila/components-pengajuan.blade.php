@@ -227,7 +227,7 @@
         <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
             
-            <a href="charts-diterima.html">
+            <a href="charts-diterima.blade.php">
               <i class="bi bi-circle"></i><span>Diterima</span>
             </a>
           </li>

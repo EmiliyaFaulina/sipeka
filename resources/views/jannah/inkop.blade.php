@@ -2,7 +2,7 @@
 
 @section('content')
 <main class="main">
-<h1>inkop</h1>
+<h1>Emiliya faulina</h1>
 </main>
 
 @endsection

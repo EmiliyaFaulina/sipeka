@@ -13,8 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/laila', function () { return view('welcome'); });
+// Route::get('/laila', function () { return view('welcome'); });
 Route::get('/lai', function () { return view('laila.index');});
 Route::get('/diterima', function () { return view('laila.charts-diterima');});
-Route::get('/profil', function () { return view('laila.users-profile');});
+Route::get('lai/profil', function () { return view('laila.users-profile');});
+Route::get('lai/pengajuan', function () { return view('laila.users-pengajuan');});
 
