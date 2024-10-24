@@ -18,16 +18,16 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
-  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+  <link href="{{ asset('')}}assets2/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{ asset('')}}assets2/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="{{ asset('')}}assets2/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="{{ asset('')}}assets2/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="{{ asset('')}}assets2/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="{{ asset('')}}assets2/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="{{ asset('')}}assets2/vendor/simple-datatables/style.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="{{ asset('')}}assets2/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: NiceAdmin1
@@ -46,7 +46,7 @@
     <div class="d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
-        <span class="d-none d-lg-block">Sipeka E-Goverment</span>
+        <span class="d-none d-lg-block">NiceAdmin</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
@@ -209,16 +209,16 @@
         <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
             <a href="tables-project.html">
-              <i class="bi bi-circle"></i><span>Project</span>
-            </a>
-          </li>
-          </li>
-            <a href="tables-progres.html">
-              <i class="bi bi-circle"></i><span>Progres</span>
-            </a>
-          </li>
-        </ul>
-      </li><!-- End Tables Nav -->
+                <i class="bi bi-circle"></i><span>Project</span>
+              </a>
+            </li>
+            </li>
+              <a href="tables-progres.html">
+                <i class="bi bi-circle"></i><span>Progres</span>
+              </a>
+            </li>
+          </ul>
+        </li><!-- End Tables Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
@@ -300,7 +300,7 @@
                         <i class="bi bi-people"></i>
                       </div>
                       <div class="ps-3">
-                        <h6>2</h6>
+                        <h6>12</h6>
                         <span class="text-success small pt-1 fw-bold">2</span>
                         <span class="text-muted small pt-2 ps-1">Pengguna Baru</span>
                       </div>
@@ -324,7 +324,7 @@
                         <i class="bi bi-envelope"></i>
                       </div>
                       <div class="ps-3">
-                        <h6>4</h6>
+                        <h6>14</h6>
                         <span class="text-success small pt-1 fw-bold">4</span>
                         <span class="text-muted small pt-2 ps-1">Pengaduan Baru</span>
                       </div>
@@ -348,7 +348,7 @@
                         <i class="bi bi-files"></i>
                       </div>
                       <div class="ps-3">
-                        <h6>4</h6>
+                        <h6>5</h6>
                         <span class="text-danger small pt-1 fw-bold">4</span>
                         <span class="text-muted small pt-2 ps-1">Projek Baru</span>
                       </div>
@@ -372,7 +372,7 @@
                         <i class="bi bi-folder"></i>
                       </div>
                       <div class="ps-3">
-                        <h6>4</h6>
+                        <h6>14</h6>
                         <span class="text-danger small pt-1 fw-bold">4</span>
                         <span class="text-muted small pt-2 ps-1">Laporan Baru</span>
                       </div>
@@ -390,20 +390,34 @@
 
   </main><!-- End #main -->
 
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
+  </footer><!-- End Footer -->
+
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/chart.js/chart.umd.js"></script>
-  <script src="assets/vendor/echarts/echarts.min.js"></script>
-  <script src="assets/vendor/quill/quill.js"></script>
-  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
-  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="{{ asset('')}}assets2/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="{{ asset('')}}assets2/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="{{ asset('')}}assets2/vendor/chart.js/chart.umd.js"></script>
+  <script src="{{ asset('')}}assets2/vendor/echarts/echarts.min.js"></script>
+  <script src="{{ asset('')}}assets2/vendor/quill/quill.js"></script>
+  <script src="{{ asset('')}}assets2/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="{{ asset('')}}assets2/vendor/tinymce/tinymce.min.js"></script>
+  <script src="{{ asset('')}}assets2/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="{{ asset('')}}assets2/js/main.js"></script>
 
 </body>
 

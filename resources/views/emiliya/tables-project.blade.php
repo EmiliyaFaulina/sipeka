@@ -192,13 +192,6 @@
               <i class="bi bi-circle"></i><span>Pengajuan</span>
             </a>
           </li>
-        </li>
-            <a href="components-pengaduan.html">
-              <i class="bi bi-circle"></i><span>Pengaduan</span>
-            </a>
-          </li>
-          <li>
-           
         </ul>
       </li><!-- End Components Nav -->
 
