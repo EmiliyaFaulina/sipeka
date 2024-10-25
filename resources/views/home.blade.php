@@ -286,9 +286,12 @@
                                 style="width: 64px; height: 64px;">
                                 <img class="img-fluid" src="{{ asset('')}}assetshome/img/icon/icon-5.png" alt="Icon">
                             </div>
-                            <h5 class="mb-3">Digital Marketing</h4>
-                                <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
-                                    stet</p>
+                            <h5 class="mb-3">e-Government</h4>
+                                <p class="mb-0">e-Government atau Pemerintahan Elektronik adalah 
+                                    upaya pemerintah untuk memanfaatkan teknologi informasi 
+                                    dan komunikasi(TIK) dalam penyelenggaraan pemerintahan.
+                                    e-Government bertujuan untuk meningkatkan kualitas pelayanan
+                                    publik, efisiensi, efektivitas, transparansi, dan akuntabilitas. </p>
                         </div>
                         <div class="service-btn rounded-0 rounded-bottom">
                             <a class="text-primary fw-medium" href="">Read More<i
@@ -303,9 +306,10 @@
                                 style="width: 64px; height: 64px;">
                                 <img class="img-fluid" src="{{ asset('')}}assetshome/img/icon/icon-6.png" alt="Icon">
                             </div>
-                            <h5 class="mb-3">Internet Marketing</h4>
-                                <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
-                                    stet</p>
+                            <h5 class="mb-3">InKop</h4>
+                                <p class="mb-0">Informasi dan Komunikasi Publik(IKP) adalah suatu unit fungsional 
+                                    dalam departemen/Kementrian KOMINFO yang mempunyai tanggung jawab utama dalam mengelola Informasi dan Komunikasi publik.
+                                    InKoP Bertujuan menjadi pusat komunikasi yang efektif, transparan, dan responsif terhadap kebutuhan informasi Masyarakat</p>
                         </div>
                         <div class="service-btn rounded-0 rounded-bottom">
                             <a class="text-primary fw-medium" href="">Read More<i
@@ -320,9 +324,9 @@
                                 style="width: 64px; height: 64px;">
                                 <img class="img-fluid" src="{{ asset('')}}assetshome/img/icon/icon-7.png" alt="Icon">
                             </div>
-                            <h5 class="mb-3">Content Marketing</h4>
-                                <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
-                                    stet</p>
+                            <h5 class="mb-3">Persandistik</h4>
+                                <p class="mb-0">Statistik Persandian dalam bidang KOMINFO adalah suatu cabang pekerjaan yang mengjalankan fungsi-fungsi tertentu untuk meningkatkan efektivitas komunikasi dan informasi publik.
+                                    Statistik Persandian bertujuan untuk meningkatkan integritas dan kejelasan komunikasi publik melalui pengelolaan data yang efektiv dan strategis</p>
                         </div>
                         <div class="service-btn rounded-0 rounded-bottom">
                             <a class="text-primary fw-medium" href="">Read More<i
@@ -337,7 +341,7 @@
                                 style="width: 64px; height: 64px;">
                                 <img class="img-fluid" src="{{ asset('')}}assetshome/img/icon/icon-8.png" alt="Icon">
                             </div>
-                            <h5 class="mb-3">Social Marketing</h4>
+                            <h5 class="mb-3">Pelayanan</h4>
                                 <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
                                     stet</p>
                         </div>
@@ -354,7 +358,7 @@
                                 style="width: 64px; height: 64px;">
                                 <img class="img-fluid" src="{{ asset('')}}assetshome/img/icon/icon-9.png" alt="Icon">
                             </div>
-                            <h5 class="mb-3">B2B Marketing</h4>
+                            <h5 class="mb-3">Penilaian</h4>
                                 <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
                                     stet</p>
                         </div>
@@ -371,7 +375,7 @@
                                 style="width: 64px; height: 64px;">
                                 <img class="img-fluid" src="{{ asset('')}}assetshome/img/icon/icon-10.png" alt="Icon">
                             </div>
-                            <h5 class="mb-3">E-mail Marketing</h4>
+                            <h5 class="mb-3">Profil</h4>
                                 <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
                                     stet</p>
                         </div>
