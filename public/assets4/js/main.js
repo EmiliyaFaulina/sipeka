@@ -303,6 +303,55 @@
     });
   })
 
+  // Fungsi untuk membuka modal Update Progres
+document.getElementById('updateProgressButton').addEventListener('click', function() {
+  var updateModal = new bootstrap.Modal(document.getElementById('updateModal'), {});
+  updateModal.show();
+});
+
+// Fungsi untuk menyimpan progres dan memperbarui tampilan
+document.getElementById('saveProgres').addEventListener('click', function() {
+  // Ambil status checkbox dari modal Update
+  var identifikasi = document.getElementById('checkIdentifikasi').checked;
+  var analisis = document.getElementById('checkAnalisis').checked;
+  var teknologi = document.getElementById('checkTeknologi').checked;
+  var wireframe = document.getElementById('checkWireframe').checked;
+
+  var antarmuka = document.getElementById('checkAntarmuka').checked;
+  var pengalaman = document.getElementById('checkPengalaman').checked;
+  var validasi = document.getElementById('checkValidasi').checked;
+
+  // Update di modal Detail
+  document.getElementById('identifikasiView').checked = identifikasi;
+  document.getElementById('analisisView').checked = analisis;
+  document.getElementById('teknologiView').checked = teknologi;
+  document.getElementById('wireframeView').checked = wireframe;
+
+  document.getElementById('antarmukaView').checked = antarmuka;
+  document.getElementById('pengalamanView').checked = pengalaman;
+  document.getElementById('validasiView').checked = validasi;
+
+  // Tutup modal Update Progres
+  var updateModal = bootstrap.Modal.getInstance(document.getElementById('updateModal'));
+  updateModal.hide();
+});
+
+// Fungsi untuk unduh PDF
+document.getElementById('unduh').addEventListener('click', function() {
+  window.open('https://example.com/download-pdf', '_blank'); // Ganti URL dengan URL unduh Anda
+});
+
+// Fungsi untuk membagikan detail sebagai PDF
+document.getElementById('bagikan').addEventListener('click', function() {
+  alert('PDF dibagikan!'); // Anda bisa menambahkan logika untuk membagikan PDF di sini
+});
+
+// Fungsi untuk simpan data
+document.getElementById('simpan').addEventListener('click', function() {
+  alert('Progres telah disimpan!'); // Logika untuk menyimpan perubahan
+});
+
+
   /**
    * Autoresize echart charts
    */

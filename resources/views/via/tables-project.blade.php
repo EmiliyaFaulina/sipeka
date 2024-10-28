@@ -405,77 +405,85 @@
       </div>
     </section>
 
-    <!-- Modal -->
-    <div class="modal fade" id="detailModal001" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="detailModalLabel">Detail Project A</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+   <!-- Modal Project: Sistem Pelayanan Kominfo-->
+<div class="modal fade" id="detailModal001" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center">
+          <img src="https://via.placeholder.com/50" alt="Foto Pengguna" class="rounded-circle" width="50">
+          <div class="ms-2">
+            <h6 class="mb-0">Tina</h6>
+            <small>NAMA PROJECT: Sistem Pelayanan Kominfo</small>
           </div>
-          <div class="modal-body">
-            <p>Informasi detail untuk Project A...</p>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <!-- Tahap Perencanaan -->
+          <div class="col-6">
+            <h6>A. Tahap Perencanaan</h6>
+            <ul class="list-unstyled">
+              <li><input type="checkbox" disabled id="identifikasiView"> Identifikasi Kebutuhan</li>
+              <li><input type="checkbox" disabled id="analisisView"> Analisis Pengguna</li>
+              <li><input type="checkbox" disabled id="teknologiView"> Penentuan Teknologi</li>
+              <li><input type="checkbox" disabled id="wireframeView"> Membuat Wireframe</li>
+            </ul>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- Tahap Desain -->
+          <div class="col-6">
+            <h6>B. Tahap Desain</h6>
+            <ul class="list-unstyled">
+              <li><input type="checkbox" disabled id="antarmukaView"> Desain Antarmuka Pengguna</li>
+              <li><input type="checkbox" disabled id="pengalamanView"> Desain Pengalaman Pengguna</li>
+              <li><input type="checkbox" disabled id="validasiView"> Revisi dan Validasi Desain</li>
+              <li><input type="checkbox" disabled> ...</li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="modal fade" id="detailModal002" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="detailModalLabel">Detail Project B</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p>Informasi detail untuk Project B...</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
+      <div class="modal-footer d-flex justify-content-between">
+        <button class="btn btn-primary" id="updateProgressButton">Update Progres</button>
+        <div class="d-flex">
+          <button class="btn btn-outline-primary me-2" id="bagikan">Bagikan (PDF)</button>
+          <button class="btn btn-outline-primary me-2" id="unduh">Unduh (PDF)</button>
+          <button class="btn btn-outline-primary" id="simpan">Simpan</button>
         </div>
       </div>
     </div>
+  </div>
+</div>
 
-    <div class="modal fade" id="detailModal003" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="detailModalLabel">Detail Project C</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p>Informasi detail untuk Project C...</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
+<!-- Modal untuk Update Progres -->
+<div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="updateModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="updateModalLabel">Update Progres Project</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>A. Tahap Perencanaan</h6>
+        <ul class="list-unstyled">
+          <li><input type="checkbox" id="checkIdentifikasi"> Identifikasi Kebutuhan</li>
+          <li><input type="checkbox" id="checkAnalisis"> Analisis Pengguna</li>
+          <li><input type="checkbox" id="checkTeknologi"> Penentuan Teknologi</li>
+          <li><input type="checkbox" id="checkWireframe"> Membuat Wireframe</li>
+        </ul>
+        <h6>B. Tahap Desain</h6>
+        <ul class="list-unstyled">
+          <li><input type="checkbox" id="checkAntarmuka"> Desain Antarmuka Pengguna</li>
+          <li><input type="checkbox" id="checkPengalaman"> Desain Pengalaman Pengguna</li>
+          <li><input type="checkbox" id="checkValidasi"> Revisi dan Validasi Desain</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="saveProgres">Simpan Progres</button>
       </div>
     </div>
-
-    <div class="modal fade" id="detailModal004" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="detailModalLabel">Detail Project D</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p>Informasi detail untuk Project D...</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </main><!-- End #main -->
-
+  </div>
+</div>
 
 
   
