@@ -209,7 +209,7 @@
         </a>
         <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="tables-project.html">
+            <a href="{{url('project')}}">
               <i class="bi bi-circle"></i><span>Project</span>
             </a>
           </li>

@@ -24,3 +24,5 @@ Route::get('/pengajuan', function () { return view('emiliya.pengajuan');});
 Route::get('/diterima', function () { return view('emiliya.charts-diterima');});
 
 Route::get('/registerrrrrr', function () { return view('emiliya.register');});
+
+Route::get('/login', function () { return view('laila.login');});
