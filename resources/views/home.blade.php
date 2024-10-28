@@ -109,6 +109,12 @@
                             </div>
                         </div>
                         <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Kesekretariatan</a>
+                            <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
+                                <a href="feature.html" class="dropdown-item">Link sistem pengajuan magang</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tentang</a>
                             <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
                                 <a href="feature.html" class="dropdown-item">Features</a>
@@ -144,17 +150,17 @@
                                         <p class="fs-5 text-white animated slideInRight">Sistem Pelayanan Komunikasi Informatika Barito Kuala. Sistem Pelayanan ini untuk mempermudah interaksi Anda dengan kami dan memastikan kebutuhan Anda terpenuhi dengan efisien.</p>
                                         </h1>
                                     <a href=""
-                                        class="btn btn-primary rounded-pill py-3 px-5 animated slideInRight">Explore
-                                        More</a>
+                                        class="btn btn-primary rounded-pill py-3 px-5 animated slideInRight">Login</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                
                             </div>
                         </div>
                     </div>
                 </div>
+            
     </div>
     <!-- Carousel End -->
 
@@ -181,6 +187,7 @@
                                     e-Government bertujuan untuk meningkatkan kualitas pelayanan
                                     publik, efisiensi, efektivitas, transparansi, dan akuntabilitas. </p>
                         </div>
+                        
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -191,10 +198,11 @@
                                 <img class="img-fluid" src="{{ asset('')}}assetshome/img/icon/icon-6.png" alt="Icon">
                             </div>
                             <h5 class="mb-3">InKop</h4>
-                                <p class="mb-0">Informasi dan Komunikasi Publik(IKP) adalah suatu unit fungsional 
+                                <p class="mb-0">Informasi dan Komunikasi Publik (IKP) adalah suatu unit fungsional 
                                     dalam departemen/Kementrian KOMINFO yang mempunyai tanggung jawab utama dalam mengelola Informasi dan Komunikasi publik.
-                                    InKoP Bertujuan menjadi pusat komunikasi yang efektif, transparan, dan responsif terhadap kebutuhan informasi Masyarakat</p>
+                                    InKoP Bertujuan menjadi pusat komunikasi yang efektif, transparan, dan responsif terhadap kebutuhan informasi Masyarakat.</p>
                         </div>
+                        
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -206,7 +214,20 @@
                             </div>
                             <h5 class="mb-3">Persandistik</h4>
                                 <p class="mb-0">Statistik Persandian dalam bidang KOMINFO adalah suatu cabang pekerjaan yang mengjalankan fungsi-fungsi tertentu untuk meningkatkan efektivitas komunikasi dan informasi publik.
-                                    Statistik Persandian bertujuan untuk meningkatkan integritas dan kejelasan komunikasi publik melalui pengelolaan data yang efektiv dan strategis</p>
+                                    Statistik Persandian bertujuan untuk meningkatkan integritas dan kejelasan komunikasi publik melalui pengelolaan data yang efektiv dan strategis.</p>
+                        </div>
+                
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item position-relative h-100">
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square bg-light rounded-circle mx-auto mb-4"
+                                style="width: 64px; height: 64px;">
+                                <img class="img-fluid" src="{{ asset('')}}assetshome/img/icon/icon-8.png" alt="Icon">
+                            </div>
+                            <h5 class="mb-3">Kesekretariatan</h4>
+                                <p class="mb-0">Diisi dengan link sistem pengajuan magang</p>
                         </div>
                     </div>
                 </div>
