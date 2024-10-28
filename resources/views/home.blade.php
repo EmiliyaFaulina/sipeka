@@ -150,36 +150,11 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="{{ asset('')}}assetshome/img/carousel-2.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-end">
-                                <div class="col-lg-7 text-end">
-                                    <p class="fs-4 text-white animated slideInLeft">Welcome to <strong>Sipeka</strong>
-                                    </p>
-                                    <h4 class="display-8 text-white mb-5 animated slideInLeft">Selamat Datang DiLayanan SIPEKA (Sistem Pelayanan Komunikasi Informatika). 
-                                        Sistem Pelayanan ini untuk mempermudah interaksi Anda dengan kami dan memastikan kebutuhan Anda terpenuhi dengan efisien.
-                                        </h4>
-                                    <a href=""
-                                        class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Explore
-                                        More</a>
-                                </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
     </div>
     <!-- Carousel End -->
 
