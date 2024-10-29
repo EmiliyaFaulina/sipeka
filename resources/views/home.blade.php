@@ -86,7 +86,7 @@
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">e-Government</a>
                             <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
-                                <a href="feature.html" class="dropdown-item">Pelayanan SP</a>
+                                <a href="feature.html" class="dropdown-item">Smart Presensi</a>
                                 <a href="team.html" class="dropdown-item">Pelayanan Domain</a>
                                 <a href="testimonial.html" class="dropdown-item">Pelayanan Internet</a>
                                 <a href="quote.html" class="dropdown-item">Tentang e-Gov</a>
