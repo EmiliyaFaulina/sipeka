@@ -21,8 +21,6 @@ Route::get('/via/Profil', function () { return view('via.users-profile');});
 
 Route::get('/via/Pengajuan', function () { return view('via.components-pengajuan');});
 
-Route::get('/via/Pengaduan', function () { return view('via.components-pengaduan');});
-
 Route::get('/via/Projek', function () { return view('via.tables-project');});
 
 Route::get('/via/Progres', function () { return view('via.tables-progres');});

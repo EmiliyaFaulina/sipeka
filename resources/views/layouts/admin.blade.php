@@ -45,7 +45,7 @@
 
     <div class="d-flex align-items-center justify-content-between">
       <a href="{{url('lai')}}" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="">
+        <img src="{{ asset('')}}assets2/img/logo.png" alt="">
         <span class="d-none d-lg-block">SIPEKA</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
@@ -190,13 +190,10 @@
         </a>
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
             <li>
-                <a href="">
-                    <i class="bi bi-circle"></i><span>Pengajuan</span>
-                </a>
-            </li>
+
             <li>
-                <a href="components-pengaduan.html">
-                    <i class="bi bi-circle"></i><span>Pengaduan</span>
+                <a href="{{url ('via/Pengajuan')}}">
+                    <i class="bi bi-circle"></i><span>Pengajuan</span>
                 </a>
             </li>
         </ul>
@@ -209,13 +206,8 @@
         </a>
         <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="tables-project.html">
+            <a href="{{url ('emiliya/project')}}">
               <i class="bi bi-circle"></i><span>Project</span>
-            </a>
-          </li>
-          </li>
-            <a href="tables-progres.html">
-              <i class="bi bi-circle"></i><span>Progres</span>
             </a>
           </li>
         </ul>
