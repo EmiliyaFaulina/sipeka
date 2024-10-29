@@ -87,7 +87,7 @@
                       </div>
                     </div>
                     <div class="col-12">
-                      <button class="btn btn-primary w-100" type="submit">Login</button>
+                      <a href="{{url('home')}}"class="btn btn-primary w-100" type="submit">Login</a>
                     </div>
                     <div class="col-12">
                       <p class="small mb-0">Tidak Punya Akun? <a href="pages-register.html">Buat Akun</a></p>

@@ -127,7 +127,7 @@
 
                     </div>
                     <div class="ms-auto d-none d-lg-block">
-                        <a href="" class="btn btn-primary rounded-pill py-2 px-3">Buat Akun</a>
+                        <a href="{{url('register')}}" class="btn btn-primary rounded-pill py-2 px-3">Buat Akun</a>
                     </div>
                 </div>
             </nav>
@@ -149,8 +149,7 @@
                                     <h1 class="display-1 text-white mb-4 animated slideInRight">Welcome to SIPEKA
                                         <p class="fs-5 text-white animated slideInRight">Sistem Pelayanan Komunikasi Informatika Barito Kuala. Sistem Pelayanan ini untuk mempermudah interaksi Anda dengan kami dan memastikan kebutuhan Anda terpenuhi dengan efisien.</p>
                                         </h1>
-                                    <a href=""
-                                        class="btn btn-primary rounded-pill py-3 px-5 animated slideInRight">Login</a>
+                                    <a href="{{url('login')}}"class="btn btn-primary rounded-pill py-3 px-5 animated slideInRight">Login</a>     
                                 </div>
                             </div>
                         </div>
