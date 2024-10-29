@@ -1,7 +1,6 @@
 @extends('layouts/admin')
  
 @section('content')
-
   <main id="main" class="main">
 
     <div class="pagetitle">
@@ -161,10 +160,7 @@
   </div>
 </div>
 
-</div>
-</div>
-</section>
-
+</html>
 </main>
 
 @endsection

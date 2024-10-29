@@ -45,13 +45,8 @@
 
     <div class="d-flex align-items-center justify-content-between">
       <a href="{{url('lai')}}" class="logo d-flex align-items-center">
-<<<<<<< HEAD
         <img src="{{ asset('')}}assets2/img/logo.png" alt="">
         <span class="d-none d-lg-block">SIPEKA</span>
-=======
-        <img src="assets/img/logo.png" alt="">
-        <span class="d-none d-lg-block">Sipeka E-Goverment</span>
->>>>>>> 681f1480784341723f8a5a324bb53ad9308fbe8b
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
@@ -211,11 +206,7 @@
         </a>
         <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-<<<<<<< HEAD
             <a href="{{url ('emiliya/project')}}">
-=======
-            <a href="{{url('project')}}">
->>>>>>> 681f1480784341723f8a5a324bb53ad9308fbe8b
               <i class="bi bi-circle"></i><span>Project</span>
             </a>
           </li>
