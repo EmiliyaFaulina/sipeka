@@ -72,7 +72,7 @@
           <ul>
             <li><a href="{{ url('home') }}" class="active">e-Government<br></a></li>
             <li><a href="{{ url('inkop') }}">InKop</a></li>
-            <li><a href="#persandistik">Persandistik</a></li>
+            <li><a href="{{ url('persandistik') }}">Persandistik</a></li>
             <li><a href="#kesekretariatan">Kesekretariatan</a></li>
             
             

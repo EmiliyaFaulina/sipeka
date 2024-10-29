@@ -64,7 +64,7 @@
 
   </section><!-- /Hero Section -->
 
-  <!-- About Section -->
+  {{-- <!-- About Section -->
   <section id="about" class="about section">
 
     <div class="container">
@@ -874,7 +874,7 @@
                 <div class="sent-message">Your message has been sent. Thank you!</div>
 
                 <button type="submit">Send Message</button>
-              </div>
+              </div> --}}
 
             </div>
           </form>
