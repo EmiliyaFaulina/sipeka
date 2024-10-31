@@ -192,7 +192,7 @@
             <li>
 
             <li>
-                <a href="{{url ('via/Pengajuan')}}">
+                <a href="{{url ('lai/pengajuan')}}">
                     <i class="bi bi-circle"></i><span>Pengajuan</span>
                 </a>
             </li>

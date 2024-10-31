@@ -20,7 +20,7 @@ Route::get('/diterima', function () { return view('laila.charts-diterima');});
 
 Route::get('lai/profil', function () { return view('laila.users-profile');});
 
-Route::get('lai/pengajuan', function () { return view('laila.users-pengajuan');});
+Route::get('lai/pengajuan', function () { return view('laila.pengajuan');});
 
 Route::get('register', function () { return view('emiliya.register');});
 

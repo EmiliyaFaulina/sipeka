@@ -59,7 +59,7 @@
                 <div class="card-body">
 
                   <div class="pt-4 pb-2">
-                    <h5 class="card-title text-center pb-0 fs-4">Masuk Ke Akun Anda</h5>
+                    <h5 class="card-title text-center pb-0 fs-4">Masuk Ke Akun Admin</h5>
                     <p class="text-center small">Masukkann nama pengurus $ kata sandi Anda untuk masuk</p>
                   </div>
 
@@ -81,6 +81,15 @@
                     </div>
 
                     <div class="col-12">
+                      <label for="yourPassword" class="form-label">Akses</label>
+                      <select name="role" class="form-control" id="role" required>
+                        <option value="--Pilih--">PILIH</option>
+                        <option value="IKP">IKP</option>
+                      </select>
+                      <div class="invalid-feedback">Silahkan masukkan kata sandi Anda!</div>
+                    </div>
+
+                    <div class="col-12">
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" name="remember" value="true" id="rememberMe">
                         <label class="form-check-label" for="rememberMe">simpan sandi</label>
@@ -90,7 +99,6 @@
                       <input type="submit" value="Login" class="btn btn-primary w-100">
                     </div>
                     <div class="col-12">
-                      <p class="small mb-0">Tidak Punya Akun? <a href="pages-register.html">Buat Akun</a></p>
                     </div>
                   </form>
 
