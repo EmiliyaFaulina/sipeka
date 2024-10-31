@@ -4,7 +4,7 @@
 <main id="main" class="main">
 
   <div class="pagetitle">
-    <h1>Dashboard E-gov</h1>
+    <h1>Dashboard</h1>
     <nav>
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -19,13 +19,14 @@
 </div>
 
 <style>
-    /* Custom styling for welcome message background */
+    /* Custom styling for welcome message with gradient background */
     .custom-alert {
-        background-color: #ccd9ed; /* Ganti dengan warna yang diinginkan, contoh warna kuning */
-        color: #333; /* Warna teks */
+        background: linear-gradient(90deg, #e0f7fa, #007bff); /* Gradien dari putih ke biru */
+        color: #fff; /* Warna teks putih untuk kontras */
         padding: 15px;
         border-radius: 5px;
         font-weight: bold;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan untuk efek lebih menonjol */
     }
 
     /* CSS for continuous scrolling text */
@@ -58,6 +59,7 @@
     // Inject the welcome message with scrolling span element
     document.getElementById("welcomeMessage").innerHTML = `<span>Selamat datang, admin ${adminName}!</span>`;
 </script>
+
 
   <section class="section dashboard">
     <div class="row">
