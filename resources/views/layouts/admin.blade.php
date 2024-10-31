@@ -186,6 +186,7 @@
       </li><!-- End Dashboard Nav -->
 
       <li class="nav-item">
+<<<<<<< HEAD
           <a class="nav-link collapsed text-black" data-bs-target="#pengajuan-nav" data-bs-toggle="collapse" href="#">
               <i class="bi bi-menu-button-wide"></i><span>Pengajuan</span><i class="bi bi-chevron-down ms-auto"></i>
           </a>
@@ -197,6 +198,22 @@
               </li>
           </ul>
       </li><!-- End Pengajuan Nav -->
+=======
+        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+            <i class="bi bi-menu-button-wide"></i><span>Pengajuan</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+            <li>
+
+            <li>
+                <a href="{{url ('via/Pengajuan')}}">
+                    <i class="bi bi-circle"></i><span>Pengajuan</span>
+                </a>
+            </li>
+        </ul>
+    </li><!-- End Components Nav -->
+    
+>>>>>>> 98bcbc7eaad3d91672267d48b7ced88aa69eb673
 
       <li class="nav-item">
           <a class="nav-link collapsed text-black" data-bs-target="#agenda-nav" data-bs-toggle="collapse" href="#">
