@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\aksesController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -25,7 +27,9 @@ Route::get('/diterima', function () { return view('emiliya.charts-diterima');});
 
 Route::get('/register', function () { return view('emiliya.register');});
 
-Route::get('/login', function () { return view('laila.login');});
+// Route::get('/login', function () { return view('laila.login');});
+
+Route::post('/login', [aksesController::class, 'akses'])->name('login');
 
 // admin
 Route::get('/login-admin', function () { return view('laila.login-admin');});
