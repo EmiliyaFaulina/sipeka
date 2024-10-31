@@ -173,18 +173,32 @@
   </header><!-- End Header -->
 
   <!-- ======= Sidebar ======= -->
-  <aside id="sidebar" class="sidebar">
+ <!-- ======= Sidebar ======= -->
+<aside id="sidebar" class="sidebar bg-primary text-white">
 
-    <ul class="sidebar-nav" id="sidebar-nav">
+  <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="{{url('lai')}}">
-          <i class="bi bi-grid"></i>
-          <span>Dashboard</span>
-        </a>
+          <a class="nav-link text-black" href="{{url('lai')}}">
+              <i class="bi bi-grid"></i>
+              <span>Dashboard</span>
+          </a>
       </li><!-- End Dashboard Nav -->
 
       <li class="nav-item">
+<<<<<<< HEAD
+          <a class="nav-link collapsed text-black" data-bs-target="#pengajuan-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-menu-button-wide"></i><span>Pengajuan</span><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul id="pengajuan-nav" class="nav-content collapse" data-bs-parent="">
+              <li>
+                  <a href="{{url('lai/pengajuan')}}" class="text-black">
+                      <i class="bi bi-circle"></i><span>Pengajuan</span>
+                  </a>
+              </li>
+          </ul>
+      </li><!-- End Pengajuan Nav -->
+=======
         <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
             <i class="bi bi-menu-button-wide"></i><span>Pengajuan</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
@@ -192,72 +206,73 @@
             <li>
 
             <li>
-                <a href="{{url ('lai/p engajuan')}}">
+                <a href="{{url ('via/Pengajuan')}}">
                     <i class="bi bi-circle"></i><span>Pengajuan</span>
                 </a>
             </li>
         </ul>
     </li><!-- End Components Nav -->
     
+>>>>>>> 98bcbc7eaad3d91672267d48b7ced88aa69eb673
 
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-layout-text-window-reverse"></i><span>Agenda</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="{{url ('emiliya/project')}}">
-              <i class="bi bi-circle"></i><span>Project</span>
-            </a>
-          </li>
-        </ul>
-      </li><!-- End Tables Nav -->
+          <a class="nav-link collapsed text-black" data-bs-target="#agenda-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-layout-text-window-reverse"></i><span>Agenda</span><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul id="agenda-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+              <li>
+                  <a href="#" class="text-black" data-bs-toggle="collapse" data-bs-target="#project-nav">
+                      <i class="bi bi-circle"></i><span>Project</span><i class="bi bi-chevron-down ms-auto"></i>
+                  </a>
+                  <ul id="project-nav" class="nav-content collapse" data-bs-parent="#agenda-nav">
+                      <li>
+                          <a href="{{url('emiliya/project')}}" class="text-black">
+                              <i class="bi bi-circle"></i><span>Detail Project</span>
+                          </a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </li><!-- End Agenda Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-bar-chart"></i><span>Laporan</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            
-            <a href="{{url ('diterima')}}">
-              <i class="bi bi-circle"></i><span>Diterima</span>
-            </a>
-          </li>
-          <li>
-            <a href="charts-ditolak.html">
-              <i class="bi bi-circle"></i><span>Ditolak</span>
-            </a>
-          </li>
-          
-        </ul>
-      </li><!-- End Charts Nav -->
+          <a class="nav-link collapsed text-black" data-bs-target="#laporan-nav" data-bs-toggle="collapse" href="#">
+              <i class="bi bi-bar-chart"></i><span>Laporan</span><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul id="laporan-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+              <li>
+                  <a href="{{url('diterima')}}" class="text-black">
+                      <i class="bi bi-circle"></i><span>Diterima</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="charts-ditolak.html" class="text-black">
+                      <i class="bi bi-circle"></i><span>Ditolak</span>
+                  </a>
+              </li>
+          </ul>
+      </li><!-- End Laporan Nav -->
 
-     
-
-      <li class="nav-heading">Pages</li>
+      <li class="nav-heading text-muted">Pages</li>
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="{{url('lai/profil')}}">
-          <i class="bi bi-person"></i>
-          <span>Profile</span>
-        </a>
+          <a class="nav-link collapsed text-black" href="{{url('lai/profil')}}">
+              <i class="bi bi-person"></i>
+              <span>Profile</span>
+          </a>
       </li><!-- End Profile Page Nav -->
 
-     
-
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-logout.html">
-          <i class="bi bi-box-arrow-in-right"></i>
-          <span>Logout</span>
-        </a>
-      </li><!-- End Login Page Nav -->
+          <a class="nav-link collapsed text-black" href="pages-logout.html">
+              <i class="bi bi-box-arrow-in-right"></i>
+              <span>Logout</span>
+          </a>
+      </li><!-- End Logout Page Nav -->
 
-     
+  </ul>
 
-    </ul>
-
-  </aside><!-- End Sidebar-->
+</aside><!-- End Sidebar -->
+<!-- End Sidebar-->
 
   {{-- content --}}
   @yield('content')

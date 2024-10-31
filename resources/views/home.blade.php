@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>GrowMark - Digital Marketing HTML Template</title>
+    <title>Sipeka - Digital Marketing HTML Template</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -87,15 +87,14 @@
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">e-Government</a>
                             <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
                                 <a href="feature.html" class="dropdown-item">Smart Presensi</a>
-                                <a href="team.html" class="dropdown-item">Pelayanan Domain</a>
-                                <a href="testimonial.html" class="dropdown-item">Pelayanan Internet</a>
+                                <a href="team.html" class="dropdown-item">Jaringan</a>
                                 <a href="quote.html" class="dropdown-item">Tentang e-Gov</a>
                             </div>
                         </div>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">InKop</a>
                             <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
-                                <a href="feature.html" class="dropdown-item">Memberikan Informasi</a>
+                                <a href="feature.html" class="dropdown-item">Penyebarluasan Informasi</a>
                                 <a href="team.html" class="dropdown-item">Dokumentasi Acara</a>
                                 <a href="testimonial.html" class="dropdown-item">Tentang InKop</a>
                             </div>
