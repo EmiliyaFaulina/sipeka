@@ -352,6 +352,7 @@ document.getElementById('simpan').addEventListener('click', function() {
 });
 
 
+
   /**
    * Autoresize echart charts
    */
@@ -365,5 +366,7 @@ document.getElementById('simpan').addEventListener('click', function() {
       }).observe(mainContainer);
     }, 200);
   }
+
+  
 
 })();
