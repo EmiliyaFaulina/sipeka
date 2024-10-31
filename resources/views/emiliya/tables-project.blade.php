@@ -87,8 +87,8 @@
         <div class="d-flex align-items-center">
           <img src="{{ asset ('')}}assets3/img/pengguna.jpeg" alt="Foto Pengguna" class="rounded-circle" width="50">
           <div class="ms-2">
-            <h6 class="mb-0">Tina</h6>
-            <small>NAMA PROJECT: Sistem Pelayanan Kominfo</small>
+            <h6 class="mb-0">Unity Pugh</h6>
+            <small>Nama Project : Project A</small>
           </div>
         </div>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
