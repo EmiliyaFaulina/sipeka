@@ -192,7 +192,11 @@
             <li>
 
             <li>
+<<<<<<< HEAD
                 <a href="{{url ('via/Pengajuan')}}">
+=======
+                <a href="{{url ('lai/p engajuan')}}">
+>>>>>>> 79b85589957bf7e9b574380889f75e0587aaf00d
                     <i class="bi bi-circle"></i><span>Pengajuan</span>
                 </a>
             </li>

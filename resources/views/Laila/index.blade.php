@@ -4,14 +4,60 @@
 <main id="main" class="main">
 
   <div class="pagetitle">
-    <h1>Dashboard</h1>
+    <h1>Dashboard E-gov</h1>
     <nav>
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
         <li class="breadcrumb-item active">Dashboard</li>
       </ol>
     </nav>
-  </div><!-- End Page Title -->
+</div><!-- End Page Title -->
+
+<!-- Welcome Message for Admin with Scrolling Animation -->
+<div id="welcomeMessage" class="custom-alert mt-4 scrolling-text" role="alert">
+    <!-- Message will be injected here by JavaScript -->
+</div>
+
+<style>
+    /* Custom styling for welcome message background */
+    .custom-alert {
+        background-color: #ccd9ed; /* Ganti dengan warna yang diinginkan, contoh warna kuning */
+        color: #333; /* Warna teks */
+        padding: 15px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    /* CSS for continuous scrolling text */
+    .scrolling-text {
+        white-space: nowrap;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .scrolling-text span {
+        display: inline-block;
+        padding-right: 100%;
+        animation: scroll-left 15s linear infinite;
+    }
+
+    @keyframes scroll-left {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+</style>
+
+<script>
+    // Assume the admin name is retrieved from the server or a variable
+    const adminName = "E-Goverment";  // You can dynamically set this value
+
+    // Inject the welcome message with scrolling span element
+    document.getElementById("welcomeMessage").innerHTML = `<span>Selamat datang, admin ${adminName}!</span>`;
+</script>
 
   <section class="section dashboard">
     <div class="row">
