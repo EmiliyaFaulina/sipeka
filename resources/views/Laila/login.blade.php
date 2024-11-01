@@ -63,7 +63,7 @@
                     <p class="text-center small">Masukkann nama pengurus $ kata sandi Anda untuk masuk</p>
                   </div>
 
-                  <form class="row g-3 needs-validation" novalidate method="GET" action="{{url('lai')}}">
+                  <form class="row g-3 needs-validation" novalidate method="GET" action="{{url('home')}}">
 
                     <div class="col-12">
                       <label for="yourUsername" class="form-label">Nama pengguna</label>
@@ -88,6 +88,10 @@
                     </div>
                     <div class="col-12">
                       <input type="submit" value="Login" class="btn btn-primary w-100">
+                    </div>
+                    <div class="col-12">
+                      <p class="small mb-0">Tidak Punya Akun? <a href="{{url('register')}}">Buat Akun</a></p>
+                     
                     </div>
                   </form>
 
