@@ -29,7 +29,7 @@ Route::get('/via/LaporanDiterima', function () { return view('via.charts-diterim
 
 Route::get('/via/LaporanDitolak', function () { return view('via.charts-ditolak');});
 
-Route::get('/via/LogOut', function () { return view('via.pages-logout');});
+Route::get('/via/logout', function () { return view('via.pages-logout');});
 
 
 
