@@ -5,13 +5,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Dashboard - NiceAdmin Bootstrap Template</title>
+  <title>SIPEKA- Sistem Pelayanan Komunikasi Informatika Barito Kuala</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{{ asset('')}}assets2/img/favicon.png" rel="icon">
+  <link href="{{ asset('')}}assets2/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
@@ -203,16 +203,9 @@
           </a>
           <ul id="agenda-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
               <li>
-                  <a href="#" class="text-black" data-bs-toggle="collapse" data-bs-target="#project-nav">
-                      <i class="bi bi-circle"></i><span>Project</span><i class="bi bi-chevron-down ms-auto"></i>
-                  </a>
-                  <ul id="project-nav" class="nav-content collapse" data-bs-parent="#agenda-nav">
-                      <li>
-                          <a href="{{url('emiliya/project')}}" class="text-black">
-                              <i class="bi bi-circle"></i><span>Detail Project</span>
-                          </a>
-                      </li>
-                  </ul>
+                <a href="{{url('emiliya/project')}}" class="text-black">
+                  <i class="bi bi-circle"></i><span>Project</span>
+              </a> 
               </li>
           </ul>
       </li><!-- End Agenda Nav -->
