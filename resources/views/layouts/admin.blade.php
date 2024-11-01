@@ -203,16 +203,9 @@
           </a>
           <ul id="agenda-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
               <li>
-                  <a href="#" class="text-black" data-bs-toggle="collapse" data-bs-target="#project-nav">
-                      <i class="bi bi-circle"></i><span>Project</span><i class="bi bi-chevron-down ms-auto"></i>
-                  </a>
-                  <ul id="project-nav" class="nav-content collapse" data-bs-parent="#agenda-nav">
-                      <li>
-                          <a href="{{url('emiliya/project')}}" class="text-black">
-                              <i class="bi bi-circle"></i><span>Detail Project</span>
-                          </a>
-                      </li>
-                  </ul>
+                <a href="{{url('emiliya/project')}}" class="text-black">
+                  <i class="bi bi-circle"></i><span>Project</span>
+              </a> 
               </li>
           </ul>
       </li><!-- End Agenda Nav -->
