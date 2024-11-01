@@ -21,9 +21,9 @@ Route::get('/emiliya', function () { return view('emiliya.index');});
 
 Route::get('emiliya/project', function () { return view('emiliya.tables-project');});
 
-Route::get('/pengajuan', function () { return view('emiliya.pengajuan');});
+Route::get('/pengajuan', function () { return view('laila.pengajuan');});
 
-Route::get('/diterima', function () { return view('emiliya.charts-diterima');});
+Route::get('/diterima', function () { return view('laila.charts-diterima');});
 
 Route::get('/register', function () { return view('emiliya.register');});
 

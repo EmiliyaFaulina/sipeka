@@ -177,7 +177,7 @@
 
   <ul class="sidebar-nav bg-white" id="sidebar-nav ">
 
-      <li class="nav-item">
+      <li class="nav-item"> 
           <a class="nav-link text-black" href="{{url('lai')}}">
               <i class="bi bi-grid"></i>
               <span>Dashboard</span>
@@ -221,9 +221,6 @@
                   </a>
               </li>
               <li>
-                  <a href="charts-ditolak.html" class="text-black">
-                      <i class="bi bi-circle"></i><span>Ditolak</span>
-                  </a>
               </li>
           </ul>
       </li><!-- End Laporan Nav -->
