@@ -264,12 +264,12 @@
           </a>
       </li><!-- End Logout Page Nav -->
 =======
-        <a class="nav-link collapsed text-black" href="pages-logout.html">
+        {{-- <a class="nav-link collapsed text-black" href="pages-logout.html">
             <i class="bi bi-box-arrow-in-right"></i>
             <span>Logout</span>
         </a>
     </li><!-- End Logout Page Nav -->
->>>>>>> d359960e2a92579436423a25807380774b10a09e
+>>>>>>> d359960e2a92579436423a25807380774b10a09e --}}
 
   </ul>
 
