@@ -256,7 +256,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Business Hours</h4>
-                    <p class="mb-1">Monday - Friday</p>
+                    <p class="mb-1">Monday - </p>
                     <h6 class="text-light">09:00 am - 07:00 pm</h6>
                     <p class="mb-1">Saturday</p>
                     <h6 class="text-light">09:00 am - 12:00 pm</h6>
