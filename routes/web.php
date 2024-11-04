@@ -19,9 +19,11 @@ Route::get('/register', function () { return view('emiliya.register');});
 
 Route::get('/login', function () { return view('laila.login');});
 
-Route::get('/home', function () { return view('jannah.index');});
+Route::get('/egove', function () { return view('laila.index');});
 
-Route::get('/egove', function () { return view('jannah.index');});
+Route::get('/egove', function () { return view('laila.pengajuan');});
+
+Route::get('/home', function () { return view('jannah.index');});
 
 Route::get('/inkop', function () { return view('jannah.index');});
 
