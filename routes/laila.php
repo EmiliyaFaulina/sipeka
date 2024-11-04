@@ -24,4 +24,7 @@ Route::get('lai/pengajuan', function () { return view('laila.pengajuan');});
 
 Route::get('register', function () { return view('emiliya.register');});
 
+Route::get('logout', function () { return view('laila.login');});
+
+
  

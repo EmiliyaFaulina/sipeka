@@ -174,7 +174,7 @@
                                     upaya pemerintah untuk memanfaatkan teknologi informasi 
                                     dan komunikasi(TIK) dalam penyelenggaraan pemerintahan.
                                     e-Government bertujuan untuk meningkatkan kualitas pelayanan
-                                    publik, efisiensi, efektivitas, transparansi, dan akuntabilitas. </p>
+                                    -publik, efisiensi, efektivitas, transparansi, dan akuntabilitas. </p>
                         </div>
                         
                     </div>
