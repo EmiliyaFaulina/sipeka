@@ -212,7 +212,7 @@
           </a>
           <ul id="pengajuan-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
               <li>
-                  <a href="{{url('lai/pengajuan')}}" class="text-black">
+                  <a href="{{url('via/Pengajuan')}}" class="text-black">
                       <i class="bi bi-circle"></i><span>Pengajuan</span>
                   </a>
               </li>
@@ -257,11 +257,19 @@
       </li><!-- End Profile Page Nav -->
 
       <li class="nav-item">
+<<<<<<< HEAD
           <a class="nav-link collapsed text-black" href="{{url('login-admin')}}">
               <i class="bi bi-box-arrow-in-right"></i>
               <span>Logout</span>
           </a>
       </li><!-- End Logout Page Nav -->
+=======
+        <a class="nav-link collapsed text-black" href="pages-logout.html">
+            <i class="bi bi-box-arrow-in-right"></i>
+            <span>Logout</span>
+        </a>
+    </li><!-- End Logout Page Nav -->
+>>>>>>> d359960e2a92579436423a25807380774b10a09e
 
   </ul>
 
