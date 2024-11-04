@@ -50,7 +50,7 @@
     <style>
       /* Warna latar belakang header */
       #header {
-        background-color: #6496cb; /* Ganti warna ini sesuai keinginan */
+        background-color: #70a0d2; /* Ganti warna ini sesuai keinginan */
         color: white; /* Warna teks dalam header */
       }
   
