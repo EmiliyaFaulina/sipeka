@@ -50,7 +50,7 @@
     <style>
       /* Warna latar belakang header */
       #header {
-        background-color: #6496cb; /* Ganti warna ini sesuai keinginan */
+        background-color: #70a0d2; /* Ganti warna ini sesuai keinginan */
         color: white; /* Warna teks dalam header */
       }
   
@@ -257,7 +257,7 @@
       </li><!-- End Profile Page Nav -->
 
       <li class="nav-item">
-<<<<<<< HEAD
+<<<<<<< HEA
           <a class="nav-link collapsed text-black" href="{{url('login-admin')}}">
               <i class="bi bi-box-arrow-in-right"></i>
               <span>Logout</span>
