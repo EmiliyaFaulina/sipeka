@@ -81,14 +81,14 @@
             <div class="nav-item dropdown">
               <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">InKoP</a>
               <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
-                  <a href="feature.html" class="dropdown-item">Buat Laporan</a>
+                  <a href="{{url('inkop')}}" class="dropdown-item">Buat Laporan</a>
                   <a href="team.html" class="dropdown-item">Lihat Laporan</a>
               </div>
            </div>
             <div class="nav-item dropdown">
               <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Persandistik</a>
               <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
-                  <a href="feature.html" class="dropdown-item">Buat Laporan</a>
+                  <a href="{{url('persandistikk')}}" class="dropdown-item">Buat Laporan</a>
                   <a href="team.html" class="dropdown-item">Lihat Laporan</a>
               </div>
            </div>
@@ -100,12 +100,12 @@
 
               <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
                 <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
-                <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
+                <span class="d-none d-md-block dropdown-toggle ps-2">Tina</span>
               </a><!-- End Profile Image Icon -->
     
               <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
                 <li class="dropdown-header">
-                  <h6>Kevin Anderson</h6>
+                  <h6>Tina</h6>
                   <span>Web Designer</span>
                  </li>
                  <li>

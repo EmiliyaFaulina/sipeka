@@ -13,12 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/home', function () { return view('jannah.index');});
+
 
 Route::get('/egov', function () { return view('jannah.egov');});
 
 Route::get('/inkop', function () { return view('jannah.inkop');});
 
-Route::get('/persandistik', function () { return view('jannah.persandistik');});
+Route::get('/persandistikk', function () { return view('jannah.persandistikk');});
 
 
