@@ -100,7 +100,7 @@
                       </div>
                     </div>
                     <div class="col-12">
-                      <a href="{{url('login')}}" class="btn btn-primary w-100" type="submit">Buat Akun</a>
+                      <a href="{{url('home')}}" class="btn btn-primary w-100" type="submit">Buat Akun</a>
                     </div>
 
                   </form>
