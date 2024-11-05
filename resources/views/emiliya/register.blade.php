@@ -64,7 +64,9 @@
                     <p class="text-center small">Masukkan detail pribadi Anda untuk membuat akun</p>
                   </div>
 
-                  <form class="row g-3 needs-validation" novalidate>
+                  <form class="row g-3 needs-validation" novalidate method="POST" action="{{route('Registrasi')}}">
+                    @csrf
+                    <input type="hidden" name="role" value="pengguna">
                     <div class="col-12">
                       <label for="yourName" class="form-label">Nama</label>
                       <input type="text" name="name" class="form-control" id="yourName" required>
@@ -73,20 +75,13 @@
 
                     <div class="col-12">
                       <label for="yourEmail" class="form-label">Email</label>
+                      <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
                       <input type="email" name="email" class="form-control" id="yourEmail" required>
                       <div class="invalid-feedback">Silahkan masukkan email yang valid address!</div>
                     </div>
 
-                    <div class="col-12">
-                      <label for="yourUsername" class="form-label">Nama Pengguna</label>
-                      <div class="input-group has-validation">
-                        <span class="input-group-text" id="inputGroupPrepend">@</span>
-                        <input type="text" name="username" class="form-control" id="yourUsername" required>
-                        <div class="invalid-feedback">Silahkan pilih nama pengguna Anda.</div>
-                      </div>
-                    </div>
-
-                    <div class="col-12">
+                    <div class="col-12 mt-3">
                       <label for="yourPassword" class="form-label">Kata sandi</label>
                       <input type="password" name="password" class="form-control" id="yourPassword" required>
                       <div class="invalid-feedback">Silahkan masukkan kata sandi Anda!</div>
@@ -100,7 +95,7 @@
                       </div>
                     </div>
                     <div class="col-12">
-                      <a href="{{url('home')}}" class="btn btn-primary w-100" type="submit">Buat Akun</a>
+                      <input type="submit" value="Buat Akun" class="btn btn-primary w-100">
                     </div>
 
                   </form>
