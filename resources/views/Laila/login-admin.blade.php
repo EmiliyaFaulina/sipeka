@@ -90,7 +90,6 @@
                         <option value="Kesekretariatan">Kesekretariatan</option>
                       </select>
                       
-                      <div class="invalid-feedback">Silahkan masukkan kata sandi Anda!</div>
                     </div>
 
                     <div class="col-12">
