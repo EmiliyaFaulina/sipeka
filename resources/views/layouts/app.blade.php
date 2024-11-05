@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - Medilab Bootstrap Template</title>
+  <title>Dashboard-user</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -99,6 +99,7 @@
                 <li class="dropdown-header">
                   <h6>Tina</h6>
                   <span>Web Designer</span>
+                  <a href="{{url('profil')}}" class="dropdown-item">Lihat Profil</a>
                  </li>
                  <li>
                   <hr class="dropdown-divider">

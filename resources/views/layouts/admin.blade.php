@@ -176,7 +176,7 @@
           <li class="nav-item dropdown pe-3">
             <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
               <img src="{{ asset('')}}assets2/img/profile-img.jpg" alt="Profile" class="rounded-circle">
-              <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
+              <span class="d-none d-md-block dropdown-toggle ps-2">{{session('role')}}</span>
             </a><!-- End Profile Image Icon -->
   
             <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
@@ -195,10 +195,22 @@
   
 
  <!-- ======= Sidebar ======= -->
-<aside id="sidebar" class="sidebar bg-primary text-white">
+ {{-- <option value="E-Government">E-Government</option>
+ <option value="IKP">IKP</option>
+ <option value="Persandian">Persandian</option>
+ <option value="Kesekretariatan">Kesekretariatan</option> --}}
+ @if(session('role') == 'E-Government')
+  <x-lailasidebar></x-lailasidebar>
+ @elseif(session('role') == 'IKP')
+ <x-emiliyasidebar></x-emiliyasidebar>
+ @elseif(session('role') == 'Persandian')
+ <x-viasidebar></x-viasidebar>
 
-  <ul class="sidebar-nav bg-white" id="sidebar-nav ">
+ @endif
+ <aside id="sidebar" class="sidebar">
 
+  <ul class="sidebar-nav" id="sidebar-nav">
+    
       <li class="nav-item"> 
           <a class="nav-link text-black" href="{{url('lai')}}">
               <i class="bi bi-grid"></i>
@@ -262,12 +274,15 @@
               <span>Logout</span>
           </a>
       </li><!-- End Logout Page Nav -->
+<<<<<<< HEAD
 
         {{-- <a class="nav-link collapsed text-black" href="pages-logout.html">
             <i class="bi bi-box-arrow-in-right"></i>
             <span>Logout</span>
         </a>
     </li><!-- End Logout Page Nav -->
+=======
+>>>>>>> b846d5d622293bae9ac4a2e0d6bc90e2d0a533c0
 
   </ul>
 
