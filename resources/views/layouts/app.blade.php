@@ -24,9 +24,11 @@
   <link href="{{ asset('assets/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
   <link href="{{ asset('assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
   <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+  
 
   <!-- Main CSS File -->
   <link href="{{ asset('assets/css/main.css')}}" rel="stylesheet">
+  
 
   <!-- =======================================================
   * Template Name: Medilab
@@ -134,7 +136,7 @@
   <script src="{{ asset('assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
 
   <!-- Main JS File -->
-  <script src="{{ asset('assets/js/main.js"></script>
+  <script src="{{ asset('assets/js/main.js') }}"></script>
 
 </body>
 

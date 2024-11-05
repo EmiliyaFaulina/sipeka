@@ -1,6 +1,13 @@
 @extends('layouts/app')
 
 @section('content')
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Chat e-Gov</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+</head>
 <style>
     body{
     background-color: #ffffff;
