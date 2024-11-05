@@ -207,7 +207,10 @@
  <x-viasidebar></x-viasidebar>
 
  @endif
+ <aside id="sidebar" class="sidebar">
 
+  <ul class="sidebar-nav" id="sidebar-nav">
+    
       <li class="nav-item"> 
           <a class="nav-link text-black" href="{{url('lai')}}">
               <i class="bi bi-grid"></i>
@@ -271,13 +274,6 @@
               <span>Logout</span>
           </a>
       </li><!-- End Logout Page Nav -->
-
-        {{-- <a class="nav-link collapsed text-black" href="pages-logout.html">
-            <i class="bi bi-box-arrow-in-right"></i>
-            <span>Logout</span>
-        </a>
-    </li><!-- End Logout Page Nav -->
-
 
   </ul>
 
