@@ -39,7 +39,7 @@
 
 <body class="index-page">
 
-  <header id="header" class="header sticky-top">
+  <header id="header" class="header sticky-top border-bottom shadow-sm">
 
     
       <div class="container d-flex justify-content-center justify-content-md-between">
@@ -54,7 +54,7 @@
     <div class="branding d-flex align-items-center">
 
       <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <a href="{{route('homeLogin')}}" class="logo d-flex align-items-center me-auto">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.png" alt=""> -->
           <div class="d-inline">
@@ -98,14 +98,14 @@
             
             <li class="nav-item dropdown pe-3">
 
-              <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-                <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
-                <span class="d-none d-md-block dropdown-toggle ps-2">Tina</span>
+              <a class="nav-link nav-profile d-flex align-items-center pe-0  disabled" data-bs-toggle="dropdown">
+                {{-- <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle"> --}}
+                <span class="d-none d-md-block dropdown-toggle ps-2">{{session('username')}}</span>
               </a><!-- End Profile Image Icon -->
     
               <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
                 <li class="dropdown-header">
-                  <h6>Tina</h6>
+                  <h6>{{session('username')}}</h6>
                   <span>Web Designer</span>
                   <a href="{{url('profil')}}" class="dropdown-item">Lihat Profil</a>
                  </li>

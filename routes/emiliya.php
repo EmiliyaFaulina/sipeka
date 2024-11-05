@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\aksesController;
+use App\Http\Controllers\RegisterController;
 
 
 /*
@@ -25,11 +26,14 @@ Route::get('emiliya/pengajuan', function () { return view('via.components-pengaj
 
 Route::get('emiliya/diterima', function () { return view('laila.charts-diterima');});
 
+Route::get('emiliya/profil', function () { return view('laila.users-profile');});
 
 
 Route::get('/login-user', function () { return view('laila.login');});
+Route::post('/loginUser', [RegisterController::class, 'loginUser'])->name('loginUser');
+// user register
 Route::get('/register', function () { return view('emiliya.register');});
-
+Route::post('/aksi-register', [RegisterController::class, 'Registrasi'])->name('Registrasi');
 
 // admin
 Route::post('/login', [aksesController::class, 'akses'])->name('login');
