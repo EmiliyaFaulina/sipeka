@@ -15,19 +15,19 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/via', function () {  return view('welcome');});
 
-Route::get('/via/Persadistik', function () { return view('via.index');});
+Route::get('/via', function () { return view('via.index');});
 
 Route::get('/via/Profil', function () { return view('via.users-profile');});
 
 Route::get('/via/Pengajuan', function () { return view('via.components-pengajuan');});
 
-Route::get('/via/Projek', function () { return view('via.tables-project');});
+Route::get('via/project', function () { return view('emiliya.tables-project');});
 
-Route::get('/via/Progres', function () { return view('via.tables-progres');});
+// Route::get('/via/Progres', function () { return view('via.tables-progres');});
 
-Route::get('/via/LaporanDiterima', function () { return view('via.charts-diterima');});
+Route::get('via/diterima', function () { return view('laila.charts-diterima');});
 
-Route::get('/via/LaporanDitolak', function () { return view('via.charts-ditolak');});
+// Route::get('/via/LaporanDitolak', function () { return view('via.charts-ditolak');});
 
 Route::get('/via/logout', function () { return view('via.pages-logout');});
 

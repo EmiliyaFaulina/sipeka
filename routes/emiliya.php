@@ -21,15 +21,16 @@ Route::get('/emiliya', function () { return view('emiliya.index');});
 
 Route::get('emiliya/project', function () { return view('emiliya.tables-project');});
 
-Route::get('/pengajuan', function () { return view('laila.pengajuan');});
+Route::get('emiliya/pengajuan', function () { return view('via.components-pengajuan');});
 
-Route::get('/diterima', function () { return view('laila.charts-diterima');});
+Route::get('emiliya/diterima', function () { return view('laila.charts-diterima');});
 
+
+
+Route::get('/login-user', function () { return view('laila.login');});
 Route::get('/register', function () { return view('emiliya.register');});
 
-// Route::get('/login', function () { return view('laila.login');});
-
-Route::post('/login', [aksesController::class, 'akses'])->name('login');
 
 // admin
+Route::post('/login', [aksesController::class, 'akses'])->name('login');
 Route::get('/login-admin', function () { return view('laila.login-admin');});

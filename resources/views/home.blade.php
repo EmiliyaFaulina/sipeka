@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Sipeka - Digital Marketing HTML Template</title>
+    <title>Sipeka - Sistem pelayanan</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -102,9 +102,7 @@
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Persandistik</a>
                             <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
-                                <a href="feature.html" class="dropdown-item">Buat Laporan</a>
-                                <a href="team.html" class="dropdown-item">Lihat Laporan</a>
-                                <a href="testimonial.html" class="dropdown-item">Tentang Persandistik</a>
+                                <a href="feature.html" class="dropdown-item">Smart Presensi</a>
                             </div>
                         </div>
                         <div class="nav-item dropdown">
@@ -256,7 +254,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Business Hours</h4>
-                    <p class="mb-1">Monday - Friday</p>
+                    <p class="mb-1">Monday - </p>
                     <h6 class="text-light">09:00 am - 07:00 pm</h6>
                     <p class="mb-1">Saturday</p>
                     <h6 class="text-light">09:00 am - 12:00 pm</h6>

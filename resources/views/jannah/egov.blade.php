@@ -261,6 +261,7 @@
 
 </style>
 <main id="main" class="main">
+
   <section class="section dashboard">
     <div class="row">
       <div class="col-lg-12">
