@@ -21,4 +21,6 @@ Route::get('/inkop', function () { return view('jannah.inkop');});
 
 Route::get('/persandistikk', function () { return view('jannah.persandistikk');});
 
+Route::get('/profil', function () { return view('jannah.profil');});
+
 
