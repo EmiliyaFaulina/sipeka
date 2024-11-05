@@ -12,8 +12,10 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('projects', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
+            $table->increments('id_project');
+            $table->integer('id_pengajuan');
+            $table->enum('status_project',['berhasil','ditolak']);
+            $table->date('tnggl_project');
             $table->timestamps();
         });
     }

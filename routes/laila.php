@@ -14,15 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Route::get('/laila', function () { return view('welcome'); });
-Route::get('/lai', function () { return view('laila.index');});
+Route::get('/laila', function () { return view('laila.index');});
 
-Route::get('/diterima', function () { return view('laila.charts-diterima');});
+Route::get('laila/diterima', function () { return view('laila.charts-diterima');});
 
-Route::get('lai/profil', function () { return view('laila.users-profile');});
+Route::get('laila/profil', function () { return view('laila.users-profile');});
 
-Route::get('lai/pengajuan', function () { return view('laila.pengajuan');});
+Route::get('laila/pengajuan', function () { return view('via.components-pengajuan');});
 
-Route::get('register', function () { return view('emiliya.register');});
+Route::get('laila/project', function () { return view('emiliya.tables-project');});
+
+// Route::get('register', function () { return view('emiliya.register');});
 
 Route::get('logout', function () { return view('laila.login');});
 
