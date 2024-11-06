@@ -80,9 +80,10 @@
             <span class="sitename">SIPEKA</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+            <p>Jl. Jend Sudirman No.74, Ulu Benteng,</p> 
+              <p>Kec. Marabahan, Kabupaten Barito Kuala,</p>
+              <p>Kalimantan Selatan 70513</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+(0511) 6701166</span></p>
             <p><strong>Email:</strong> <span>info@example.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
