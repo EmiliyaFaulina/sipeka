@@ -207,7 +207,7 @@
  <x-viasidebar></x-viasidebar>
 
  @endif
- <aside id="sidebar" class="sidebar">
+ {{-- <aside id="sidebar" class="sidebar">
 
   <ul class="sidebar-nav" id="sidebar-nav">
     
@@ -275,9 +275,17 @@
           </a>
       </li><!-- End Logout Page Nav -->
 
+
+        {{-- <a class="nav-link collapsed text-black" href="pages-logout.html">
+            <i class="bi bi-box-arrow-in-right"></i>
+            <span>Logout</span>
+        </a>
+    </li><!-- End Logout Page Nav -->
+
+
   </ul>
 
-</aside><!-- End Sidebar -->
+</aside><!-- End Sidebar --> --}}
 
   {{-- content --}}
   @yield('content')

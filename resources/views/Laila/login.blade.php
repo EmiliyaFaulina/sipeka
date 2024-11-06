@@ -57,14 +57,23 @@
               <div class="card mb-3">
 
                 <div class="card-body">
-
+                  @if ($errors->any())
+                  <div class="alert alert-danger">
+                      <ul>
+                          @foreach ($errors->all() as $error)
+                              <li>{{ $error }}</li>
+                          @endforeach
+                      </ul>
+                  </div>
+                  @endif
+                  
                   <div class="pt-4 pb-2">
                     <h5 class="card-title text-center pb-0 fs-4">Masuk Ke Akun Anda</h5>
                     <p class="text-center small">Masukkann nama pengurus $ kata sandi Anda untuk masuk</p>
                   </div>
 
-                  <form class="row g-3 needs-validation" novalidate method="GET" action="{{url('home')}}">
-
+                  <form class="row g-3 needs-validation" novalidate method="POST" action="{{route('loginUser')}}">
+                    @csrf
                     <div class="col-12">
                       <label for="yourUsername" class="form-label">Nama pengguna</label>
                       <div class="input-group has-validation">
