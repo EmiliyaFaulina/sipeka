@@ -274,15 +274,14 @@
               <span>Logout</span>
           </a>
       </li><!-- End Logout Page Nav -->
-<<<<<<< HEAD
+
 
         {{-- <a class="nav-link collapsed text-black" href="pages-logout.html">
             <i class="bi bi-box-arrow-in-right"></i>
             <span>Logout</span>
         </a>
     </li><!-- End Logout Page Nav -->
-=======
->>>>>>> b846d5d622293bae9ac4a2e0d6bc90e2d0a533c0
+
 
   </ul>
 

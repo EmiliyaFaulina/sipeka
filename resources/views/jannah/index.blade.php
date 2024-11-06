@@ -1,6 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Dasboard-User</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+</head>
 <main class="main">
 
   <!-- Hero Section -->

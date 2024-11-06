@@ -31,7 +31,7 @@ Route::get('/kesekretariatan', function () { return view('jannah.index');});
 
 Route::get('/emiliya', function () {return view('welcome');});
 
-Route::get('/pengajuan', function () {return view('emiliya');});
+Route::get('/pengajuan', function () {return view('emiliya.pengajuan');});
 
 Route::get('/project', function () { return view('emiliya.tables-project');});
 

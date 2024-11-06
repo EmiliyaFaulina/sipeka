@@ -1,13 +1,20 @@
 @extends('layouts/app')
 
 @section('content')
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Chat Persandistik</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+</head>
 <style>
     body{
-    background-color: #f4f7f6;
+    background-color: #ffffff;
     margin-top:20px;
 }
 .card {
-    background: #fff;
+    background: #b8c8eb;
     transition: .5s;
     border: 0;
     margin-bottom: 30px;
@@ -270,64 +277,142 @@
           <div class="row clearfix">
               <div class="col-lg-12">
                   <div class="card chat-app">
-                      <div id="plist" class="people-list">
+                      <div id="plist" >
                           <div class="input-group">
                               <div class="input-group-prepend">
-                                  <span class="input-group-text"><i class="fa fa-search"></i></span>
+                                  
                               </div>
-                              <input type="text" class="form-control" placeholder="Search...">
+                              
                           </div>
-                          <ul class="list-unstyled chat-list mt-2 mb-0">
-                              <li class="clearfix" onclick="openChat('Vincent Porter', 'left 7 mins ago', 'https://bootdey.com/img/Content/avatar/avatar1.png')">
-                                  <img src="{{ asset ('')}}assets3/img/pengguna.jpeg" alt="avatar">
-                                  <div class="about">
-                                      <div class="name">Vincent Porter</div>
-                                      <div class="status"> <i class="fa fa-circle offline"></i> left 7 mins ago </div>                                            
-                                  </div>
-                              </li>
-                              <li class="clearfix active" onclick="openChat('Aiden Chavez', 'online', 'https://bootdey.com/img/Content/avatar/avatar2.png')">
-                                  <img src="{{ asset ('')}}assets4/img/messages-2.jpg" alt="avatar">
-                                  <div class="about">
-                                      <div class="name">Aiden Chavez</div>
-                                      <div class="status"> <i class="fa fa-circle online"></i> online </div>
-                                  </div>
-                              </li>
-                              <!-- Tambahkan kontak lainnya sesuai kebutuhan -->
-                          </ul>
+                          
+                        </ul>
                       </div>
                       <div class="chat">
-                          <div class="chat-header clearfix">
-                              <div class="row">
-                                  <div class="col-lg-6">
-                                      <a href="javascript:void(0);" data-toggle="modal" data-target="#view_info">
-                                          <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="avatar">
-                                      </a>
-                                      <div class="chat-about">
-                                          <h6 class="m-b-0" id="chatName">Aiden Chavez</h6>
-                                          <small id="chatStatus">Last seen: 2 hours ago</small>
-                                      </div>
-                                  </div>
-                                  <div class="col-lg-6 hidden-sm text-right">
-                                      <a href="javascript:void(0);" class="btn btn-outline-secondary"><i class="fa fa-camera"></i></a>
-                                      <a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-image"></i></a>
-                                      <a href="javascript:void(0);" class="btn btn-outline-info"><i class="fa fa-cogs"></i></a>
-                                      <a href="javascript:void(0);" class="btn btn-outline-warning"><i class="fa fa-question"></i></a>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="chat-history" id="chatHistory">
-                              <ul class="m-b-0">
-                                  <!-- Riwayat pesan ditampilkan di sini -->
-                              </ul>
-                          </div>
-                          <div class="chat-message clearfix">
-                              <div class="input-group mb-0">
-                                  <div class="input-group-prepend">
-                                      <span class="input-group-text"><i class="fa fa-send"></i></span>
-                                  </div>
-                                  <input type="text" class="form-control" placeholder="Enter text here...">                                    
-                              </div>
-                          </div>
+                        <div class="chat-header clearfix">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <a href="javascript:void(0);" data-toggle="modal" data-target="#view_info">  
+                                        <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="avatar">
+                                    </a>
+                                    <div class="chat-about">
+                                        <h6 class="m-b-0" id="chatName">Aiden Chavez</h6>
+                                        <small id="chatStatus">Last seen: 2 hours ago</small>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 hidden-sm text-right">
+                                    <!-- Tombol Unggah Dokumen -->
+                                    <a href="javascript:void(0);" class="btn btn-outline-secondary" onclick="triggerDocumentUpload()"><i class="fa fa-upload"></i> Upload Dokumen</a>
+                    
+                                    <!-- Input File untuk Unggah Dokumen -->
+                                    <input type="file" id="documentUpload" accept=".pdf, .doc, .docx" style="display: none;" onchange="handleDocumentUpload(event)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-history" id="chatHistory">
+                            <ul class="m-b-0">
+                                <!-- Riwayat pesan ditampilkan di sini -->
+                            </ul>
+                        </div>
+                        <div class="chat-message clearfix">
+                            <div class="input-group mb-0">
+                                <input type="text" class="form-control" placeholder="Enter text here..." onkeypress="sendMessage(event)">                                    
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" onclick="sendMessageButton()">
+                                        <i class="fa fa-paper-plane"></i> <!-- Ikon kirim pesan -->
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Elemen Notifikasi -->
+                    <div id="notification" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #28a745; color: white; padding: 10px; border-radius: 5px;">
+                        Dokumen berhasil dihapus
+                    </div>
+                    
+                    <!-- Tambahkan JavaScript -->
+                    <script>
+                        // Memicu unggahan dokumen
+                        function triggerDocumentUpload() {
+                            document.getElementById('documentUpload').click();
+                        }
+                    
+                        // Menangani proses unggah dokumen
+                        function handleDocumentUpload(event) {
+                            const file = event.target.files[0];
+                            if (file) {
+                                const chatHistory = document.getElementById('chatHistory').querySelector('ul');
+                                const li = document.createElement('li');
+                                li.classList.add('document-item', 'text-right'); // Tambahkan kelas untuk styling dan posisi
+                                li.innerHTML = `
+                                    <span>Dokumen diunggah: ${file.name}</span>
+                                    <button class="btn btn-danger btn-sm ml-2" onclick="deleteDocument(this)">Hapus</button>
+                                `;
+                                chatHistory.appendChild(li);
+                                
+                                // Reset input untuk memungkinkan pengunggahan ulang file yang sama
+                                event.target.value = '';
+                            }
+                        }
+                    
+                        // Mengirim pesan saat menekan tombol Enter
+                        function sendMessage(event) {
+                            if (event.key === 'Enter') {
+                                sendMessageContent();
+                            }
+                        }
+                    
+                        // Mengirim pesan saat tombol kirim diklik
+                        function sendMessageButton() {
+                            sendMessageContent();
+                        }
+                    
+                        // Fungsi untuk mengirim pesan
+                        function sendMessageContent() {
+                            const input = document.querySelector('.chat-message input');
+                            const message = input.value.trim();
+                            if (message) {
+                                const chatHistory = document.getElementById('chatHistory').querySelector('ul');
+                                const li = document.createElement('li');
+                                li.classList.add('chat-message', 'text-right'); // Tambahkan kelas untuk styling dan posisi
+                                li.innerHTML = `
+                                    <span>${message}</span>
+                                `;
+                                chatHistory.appendChild(li);
+                                input.value = ''; // Reset input setelah mengirim pesan
+                            }
+                        }
+                    
+                        // Menghapus dokumen dari daftar dengan konfirmasi dan notifikasi
+                        function deleteDocument(button) {
+                            if (confirm("Anda yakin ingin menghapus dokumen ini?")) {
+                                const listItem = button.parentElement;
+                                listItem.remove();
+                                showNotification("Dokumen berhasil dihapus");
+                            }
+                        }
+                    
+                        // Menampilkan notifikasi singkat di tengah layar
+                        function showNotification(message) {
+                            const notification = document.getElementById('notification');
+                            notification.textContent = message;
+                            notification.style.display = 'block';
+                            
+                            // Sembunyikan notifikasi setelah 3 detik
+                            setTimeout(() => {
+                                notification.style.display = 'none';
+                            }, 3000);
+                        }
+                    </script>
+                    
+                    <style>
+                        /* Tambahkan gaya untuk posisi dokumen dan pesan */
+                        .document-item, .chat-message {
+                            text-align: right; /* Menyusun teks ke kanan */
+                            margin-bottom: 10px; /* Spasi antar item */
+                        }
+                    </style>
+                    
                       </div>
                   </div>
               </div>
@@ -350,5 +435,6 @@
 }
 
 </script>
+
 
 @endsection
