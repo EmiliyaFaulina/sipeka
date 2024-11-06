@@ -214,7 +214,7 @@
                                 <img class="img-fluid" src="{{ asset('')}}assetshome/img/icon/icon-8.png" alt="Icon">
                             </div>
                             <h5 class="mb-3">Kesekretariatan</h4>
-                                <p class="mb-0">Diisi dengan link sistem pengajuan magang</p>
+                                <p class="mb-0">Link sistem pengajuan magang</p>
                         </div>
                     </div>
                 </div>
