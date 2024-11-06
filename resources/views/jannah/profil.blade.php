@@ -97,30 +97,11 @@
                                         <div class="col-md-8 col-lg-9">
                                             <img src="{{ asset('')}}assets4/img/profile-img.jpg" alt="Profile">
                                             <div class="pt-2">
-                                                <input type="file" id="uploadProfileImage" style="display: none;" accept="image/*">
-                                                <a href="#" class="btn btn-primary btn-sm" title="Upload new profile image" onclick="uploadImage()">
-                                                    <i class="bi bi-upload"></i>
-                                                </a>
-                                                <a href="#" class="btn btn-danger btn-sm" title="Remove my profile image" onclick="removeImage()">
-                                                    <i class="bi bi-trash"></i>
-                                                </a>
+                                                <a href="#" class="btn btn-primary btn-sm"
+                                                    title="Upload new profile image"><i class="bi bi-upload"></i></a>
+                                                <a href="#" class="btn btn-danger btn-sm"
+                                                    title="Remove my profile image"><i class="bi bi-trash"></i></a>
                                             </div>
-                                            
-                                            <script>
-                                                function uploadImage() {
-                                                    document.getElementById('uploadProfileImage').click();
-                                                    document.getElementById('uploadProfileImage').onchange = function() {
-                                                        // Lakukan aksi upload ke server di sini
-                                                        alert("Image is ready for upload!");
-                                                    };
-                                                }
-                                            
-                                                function removeImage() {
-                                                    // Lakukan aksi penghapusan image di server di sini
-                                                    alert("Profile image has been removed!");
-                                                }
-                                            </script>
-                                            
                                         </div>
                                     </div>
 
