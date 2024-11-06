@@ -68,11 +68,7 @@
                                     <div class="col-lg-9 col-md-8">Kevin Anderson</div>
                                 </div>
 
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-4 label">Bidang</div>
-                                    <div class="col-lg-9 col-md-8">Sekretariat</div>
-                                </div>
-
+                               
                                 <div class="row">
                                     <div class="col-lg-3 col-md-4 label">Alamat</div>
                                     <div class="col-lg-9 col-md-8">A108 Adam Street, New York, NY 535022</div>
@@ -117,13 +113,6 @@
                                         </div>
                                     </div>
 
-                                    <div class="row mb-3">
-                                        <label for="Job" class="col-md-4 col-lg-3 col-form-label">Bidang</label>
-                                        <div class="col-md-8 col-lg-9">
-                                            <input name="job" type="text" class="form-control" id="Job"
-                                                value="Web Designer">
-                                        </div>
-                                    </div>
 
                                     <div class="row mb-3">
                                         <label for="Address" class="col-md-4 col-lg-3 col-form-label">Alamat</label>
