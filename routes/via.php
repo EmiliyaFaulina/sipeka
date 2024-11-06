@@ -17,7 +17,7 @@ Route::get('/via', function () {  return view('welcome');});
 
 Route::get('/via', function () { return view('via.index');});
 
-Route::get('/via/Profil', function () { return view('via.users-profile');});
+Route::get('via/profil', function () { return view('laila.users-profile');});
 
 Route::get('/via/Pengajuan', function () { return view('via.components-pengajuan');});
 
