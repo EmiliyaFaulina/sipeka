@@ -305,6 +305,6 @@
   <!-- Template Main JS File -->
   <script src="{{ asset('')}}assets2/js/main.js"></script>
 
-</body>
+</body> 
 
 </html>
