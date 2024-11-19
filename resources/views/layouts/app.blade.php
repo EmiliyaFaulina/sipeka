@@ -19,7 +19,9 @@
   <link href="{{ asset('assets/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
   <link href="{{ asset('assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
   <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
-  
+
+  <link href="{{ asset('')}}assets2/vendor/simple-datatables/style.css" rel="stylesheet">
+
 
   <!-- Main CSS File -->
   <link href="{{ asset('assets/css/main.css')}}" rel="stylesheet">
@@ -63,21 +65,21 @@
             <div class="nav-item dropdown">
               <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">e-Government</a>
               <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
-                  <a href="{{url('egov')}}" class="dropdown-item">Buat Laporan</a>
-                  <a href="team.html" class="dropdown-item">Lihat Laporan</a>
+                  <a href="{{url('egov')}}" class="dropdown-item">Buat Pengajuan</a>
+                  <a href="{{route('dataPengajuan')}}" class="dropdown-item">Lihat Laporan</a>
               </div>
            </div>
             <div class="nav-item dropdown">
               <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">InKoP</a>
               <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
-                  <a href="{{url('inkop')}}" class="dropdown-item">Buat Laporan</a>
+                  <a href="{{url('inkop')}}" class="dropdown-item">Buat Pengajuan</a>
                   <a href="team.html" class="dropdown-item">Lihat Laporan</a>
               </div>
            </div>
             <div class="nav-item dropdown">
               <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Persandistik</a>
               <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
-                  <a href="{{url('persandistikk')}}" class="dropdown-item">Buat Laporan</a>
+                  <a href="{{url('persandistikk')}}" class="dropdown-item">Buat Pengajuan</a>
                   <a href="team.html" class="dropdown-item">Lihat Laporan</a>
               </div>
            </div>
@@ -130,7 +132,14 @@
   <script src="{{ asset('assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
   <script src="{{ asset('assets/vendor/purecounter/purecounter_vanilla.js')}}"></script>
   <script src="{{ asset('assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
+    <script src="{{ asset('')}}assets2/vendor/simple-datatables/simple-datatables.js"></script>
 
+  <SCript>
+    $(document).ready( function () {
+    $('#myTable').DataTable();
+} );
+  </SCript>
+ 
   <!-- Main JS File -->
   <script src="{{ asset('assets/js/main.js') }}"></script>
 

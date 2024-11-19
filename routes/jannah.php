@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\PengajuanController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,8 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 
+// pengajuan
+Route::get('/egov', [PengajuanController::class, 'index'])->name('egov');
+Route::post('/aksi-Pengajuan', [PengajuanController::class, 'pengajuan'])->name('pengajuanAksi');
+route::get('/data-pengajuan', [PengajuanController::class, 'dataPengajuan'])->name('dataPengajuan');
 
-Route::get('/egov', function () { return view('jannah.egov');});
 
 Route::get('/inkop', function () { return view('jannah.inkop');});
 

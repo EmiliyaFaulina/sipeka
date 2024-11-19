@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class pengajuan extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'judul_pengajuan',
+        'user',
+        'status',
+        'tanggal',
+        'foto'
+    ];
+
 }

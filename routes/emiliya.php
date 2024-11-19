@@ -3,7 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\aksesController;
 use App\Http\Controllers\RegisterController;
-
+use App\Http\Controllers\PengajuanController;
+use App\Models\pengajuan;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,3 +39,4 @@ Route::post('/aksi-register', [RegisterController::class, 'Registrasi'])->name('
 // admin
 Route::post('/login', [aksesController::class, 'akses'])->name('login');
 Route::get('/login-admin', function () { return view('laila.login-admin');});
+
