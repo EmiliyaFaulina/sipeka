@@ -53,7 +53,7 @@
         <li class="nav-heading text-muted">Pages</li>
   
         <li class="nav-item">
-            <a class="nav-link collapsed text-black" href="{{url('lai/profil')}}">
+            <a class="nav-link collapsed text-black" href="{{url('via/profil')}}">
                 <i class="bi bi-person"></i>
                 <span>Profile</span>
             </a>
