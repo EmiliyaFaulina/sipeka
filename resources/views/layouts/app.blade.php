@@ -97,7 +97,7 @@
                   <h6>{{session('username')}}</h6>
                   <span>Web Designer</span>
                   <a href="{{url('profil')}}" class="dropdown-item">Lihat Profil</a>
-                  <a href="{{url('logout')}}" class="dropdown-item">Log Out</a>
+                  <a href="{{url('logout ')}}" class="dropdown-item">Log Out</a>
                  </li>
                  <li>
                   <hr class="dropdown-divider">
