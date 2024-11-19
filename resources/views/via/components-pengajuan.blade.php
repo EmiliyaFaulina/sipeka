@@ -324,7 +324,7 @@
                                   </div>
                               </div>
                           </div>
-                          <div class="chat-history" id="chatHistory">
+                          {{-- <div class="chat-history" id="chatHistory">
                               <ul class="m-b-0">
                                   <!-- Riwayat pesan ditampilkan di sini -->
                               </ul>
@@ -336,7 +336,7 @@
                                   </div>
                                   <input type="text" class="form-control" placeholder="Enter text here...">                                    
                               </div>
-                          </div>
+                          </div> --}}
                       </div>
                   </div>
               </div>

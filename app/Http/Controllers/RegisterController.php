@@ -44,7 +44,9 @@ class RegisterController extends Controller
             return redirect()->back()->withErrors('username tidak ada');
         }
         if(Hash::check($validated['password'], $usercek->password)){
+            session::put('id', $usercek['id']);
             session::put('username', $usercek['username']);
+            session::put('email', $usercek['email']);
            return redirect()->route('homeLogin');
         }
         else{
