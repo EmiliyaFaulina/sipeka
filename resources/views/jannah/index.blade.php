@@ -33,7 +33,9 @@
                 <div class="icon-box" data-aos="zoom-out" data-aos-delay="300">
                   <i class="bi bi-clipboard-data"></i>
                   <h4>e-Government</h4>
-                  <p>e-Government</p>
+                  <p>Layanan Smart Presensi
+                    Layanan Jaringan
+                  </p>
                 </div>
               </div><!-- End Icon Box -->
 
@@ -41,7 +43,9 @@
                 <div class="icon-box" data-aos="zoom-out" data-aos-delay="400">
                   <i class="bi bi-gem"></i>
                   <h4>Informasi Komunikasi Publikasi</h4>
-                  <p>Informasi Komunikasi Publikasi</p>
+                  <p>Layanan Publikasi Informasi
+                    Peliputan Acara
+                  </p>
                 </div>
               </div><!-- End Icon Box -->
 
@@ -50,7 +54,7 @@
                   
                   <i class="bi bi-inboxes"></i>
                   <h4>Statistik Persandian</h4>
-                  <p>Statistik Persandian</p>
+                  <p>Layanan Smart Presensi</p>
                 </div>
               </div><!-- End Icon Box -->
 
@@ -58,7 +62,7 @@
                 <div class="icon-box" data-aos="zoom-out" data-aos-delay="600">
                   <i class="bi bi-inboxes"></i>
                   <h4>Kesekretariatan</h4>
-                  <p>Kesekretariatan</p>
+                  <p>Layanan pengajuan magang</p>
                 </div>
               </div><!-- End Icon Box -->
 
@@ -73,7 +77,7 @@
   
   <footer id="footer" class="footer light-background">
 
-    <div class="container footer-top">
+    {{-- <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="{{url('/')}}" class="logo d-flex align-items-center">
@@ -150,7 +154,7 @@
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
-    </div><!-- /Hero Section -->
+    </div><!-- /Hero Section --> --}}
 
   {{-- <!-- About Section -->
   <section id="about" class="about section">
