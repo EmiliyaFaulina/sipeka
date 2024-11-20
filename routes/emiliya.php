@@ -23,7 +23,10 @@ Route::get('/emiliya', function () { return view('emiliya.index');});
 
 Route::get('emiliya/project', function () { return view('emiliya.tables-project');});
 
-Route::get('emiliya/pengajuan', function () { return view('via.components-pengajuan');});
+Route::resource('/emiliya/pengajuan', PengajuanController::class);
+Route::get('/emiliya/{id}/pengajuan/set-status', [PengajuanController::class, 'statusPengajuan'])->name('updatestatus');
+
+
 
 Route::get('emiliya/diterima', function () { return view('laila.charts-diterima');});
 

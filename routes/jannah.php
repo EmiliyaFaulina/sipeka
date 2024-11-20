@@ -15,7 +15,7 @@ use App\Http\Controllers\PengajuanController;
 
 
 // pengajuan
-Route::get('/egov', [PengajuanController::class, 'index'])->name('egov');
+Route::get('/egov', [PengajuanController::class, 'pengajuanIndex'])->name('egov');
 Route::post('/aksi-Pengajuan', [PengajuanController::class, 'pengajuan'])->name('pengajuanAksi');
 route::get('/data-pengajuan', [PengajuanController::class, 'dataPengajuan'])->name('dataPengajuan');
 

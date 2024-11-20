@@ -8,6 +8,9 @@ use Illuminate\Support\Facades\Session;
 
 class PengajuanController extends Controller
 {
+    public function pengajuanIndex(){
+        return view('jannah.egov');
+    }
     public function index(){
         $pengajuan = pengajuan::with('userPengajuan')->orderBy('tanggal', 'DESC')->get();
         return view('via.components-pengajuan', compact('pengajuan'));
