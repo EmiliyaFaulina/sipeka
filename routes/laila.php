@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PengajuanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,7 +21,8 @@ Route::get('laila/diterima', function () { return view('laila.charts-diterima');
 
 Route::get('laila/profil', function () { return view('laila.users-profile');});
 
-Route::get('laila/pengajuan', function () { return view('via.components-pengajuan');});
+Route::resource('/laila/pengajuan', PengajuanController::class);
+Route::get('/laila/{id}/pengajuan/set-status', [PengajuanController::class, 'statusPengajuan'])->name('updatestatus');
 
 Route::get('laila/project', function () { return view('emiliya.tables-project');});
 
@@ -29,4 +31,3 @@ Route::get('laila/project', function () { return view('emiliya.tables-project');
 Route::get('logout', function () { return view('laila.login');});
 
 
- 

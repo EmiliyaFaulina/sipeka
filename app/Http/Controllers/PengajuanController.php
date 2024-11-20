@@ -9,11 +9,12 @@ use Illuminate\Support\Facades\Session;
 class PengajuanController extends Controller
 {
     public function index(){
-        return view('jannah.egov');
+        $pengajuan = pengajuan::with('userPengajuan')->orderBy('tanggal', 'DESC')->get();
+        return view('via.components-pengajuan', compact('pengajuan'));
     }
 
     public function pengajuan(Request $request){
-        
+
         $validasi = $request->validate([
             'judul_pengajuan' => 'required|max:255|string',
             'foto' => 'required|max:10000|mimes:pdf'
@@ -33,7 +34,7 @@ class PengajuanController extends Controller
         $pengajuan->foto = 'berkas/'.$imageName;
         $pengajuan->save();
 
-        if($pengajuan == true){ 
+        if($pengajuan == true){
             Session::flash('success', 'Pengajuan Telah Dibuat');
             return redirect()->route('egov');
         }
@@ -44,10 +45,24 @@ class PengajuanController extends Controller
 
     }
 
+    public function statusPengajuan(Request $request, $id){
+        $request->validate([
+            'status' => 'required|in:berhasil,ditolak'
+        ]);
+
+        $item = pengajuan::findOrFail($id);
+        $item->status = $request->status;
+        $item->save();
+
+        return redirect()->route('pengajuan.index');
+
+    }
+
     public function dataPengajuan(){
         return view('jannah.data-pengajuan');
     }
     public function sudahLogin(){
         return view('jannah.index');
     }
+
 }
