@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PengajuanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,7 +20,8 @@ Route::get('/via', function () { return view('via.index');});
 
 Route::get('via/profil', function () { return view('laila.users-profile');});
 
-Route::get('/via/Pengajuan', function () { return view('via.components-pengajuan');});
+Route::resource('/via/pengajuan', PengajuanController::class);
+Route::get('/via/{id}/pengajuan/set-status', [PengajuanController::class, 'statusPengajuan'])->name('updatestatus');
 
 Route::get('via/project', function () { return view('emiliya.tables-project');});
 

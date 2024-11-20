@@ -3,7 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\aksesController;
 use App\Http\Controllers\RegisterController;
-
+use App\Http\Controllers\PengajuanController;
+use App\Models\pengajuan;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,7 +23,10 @@ Route::get('/emiliya', function () { return view('emiliya.index');});
 
 Route::get('emiliya/project', function () { return view('emiliya.tables-project');});
 
-Route::get('emiliya/pengajuan', function () { return view('via.components-pengajuan');});
+Route::resource('/emiliya/pengajuan', PengajuanController::class);
+Route::get('/emiliya/{id}/pengajuan/set-status', [PengajuanController::class, 'statusPengajuan'])->name('updatestatus');
+
+
 
 Route::get('emiliya/diterima', function () { return view('laila.charts-diterima');});
 
@@ -38,3 +42,4 @@ Route::post('/aksi-register', [RegisterController::class, 'Registrasi'])->name('
 // admin
 Route::post('/login', [aksesController::class, 'akses'])->name('login');
 Route::get('/login-admin', function () { return view('laila.login-admin');});
+

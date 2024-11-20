@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PengajuanController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -31,7 +32,7 @@ Route::get('/kesekretariatan', function () { return view('jannah.index');});
 
 Route::get('/emiliya', function () {return view('welcome');});
 
-Route::get('/pengajuan', function () {return view('emiliya.pengajuan');});
+Route::get('/pengajuan', [PengajuanController::class, 'sudahLogin'])->name('homeLogin');
 
 Route::get('/project', function () { return view('emiliya.tables-project');});
 
